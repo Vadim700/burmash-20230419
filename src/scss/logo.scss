@@ -1,0 +1,36 @@
+.logo {
+	display: flex;
+	align-items: center;
+	column-gap: 18px;
+	position: relative;
+	z-index: 4;
+	@media (max-width: $mobile) {
+		column-gap: rem(6);
+	}
+
+	&__icon {
+		@media (max-width: $mobile) {
+			& img {
+				width: 40px;
+			}
+		}
+	}
+
+	&__description {
+		max-width: 145px;
+		font-style: italic;
+		font-size: 12px;
+		line-height: 1.64;
+		letter-spacing: 0.44px;
+		color: var(--ligth-text);
+		flex-shrink: 0;
+		@media (max-width: em(1250)) {
+			display: none;
+		}
+		@media (max-width: em(768)) {
+			display: block;
+			font-size: rem(7.5);
+			max-width: rem(95);
+		}
+	}
+}
