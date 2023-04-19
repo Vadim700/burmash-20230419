@@ -1,1 +1,45 @@
 // Заголовки, общие БЄМ блоки и проче...
+.title {
+	font-family: "OpenSans_Condensed";
+	font-style: normal;
+	font-weight: 300;
+	font-size: rem(64);
+	line-height: 1.2;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: var(--primary-text);
+
+	&_white {
+		color: var(--white-text);
+	}
+}
+
+.subtitle {
+	font-family: "OpenSans_Condensed";
+	font-style: normal;
+	font-weight: 300;
+	font-size: rem(30);
+	line-height: 1.2;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: var(--primary-text);
+
+	&_white {
+		color: var(--white-text);
+	}
+}
+
+.primary-text {
+	font-weight: 300;
+	font-size: rem(16);
+	line-height: 1.5;
+	letter-spacing: 0.44px;
+
+	&_white {
+		color: var(--white-text);
+	}
+
+	&_link {
+		color: var(--link-text);
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}

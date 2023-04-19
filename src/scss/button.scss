@@ -1,24 +1,22 @@
 .button {
-	font-weight: 700;
-	font-size: 13px;
-	line-height: 18px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 14px 20px;
-	border-radius: 5px;
-	background: var(--gradient-orange);
 	width: 100%;
+	padding: 14px 20px;
+	background: var(--gradient-orange);
+	border-radius: 5px;
+
+	font-size: rem(16);
+	line-height: percent(22, 16);
+	font-weight: 700;
+	color: var(--white-text);
 	white-space: nowrap;
 
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 22px;
-
-	color: var(--white-text);
-
 	&_action {
+		font-size: rem(13);
+		line-height: percent(18, 13);
 		padding: 8px 20px;
 		border: 1px solid var(--orange);
 		background: var(--gradient-orange);
