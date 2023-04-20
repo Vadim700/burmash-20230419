@@ -1,0 +1,65 @@
+//====================================================================================================
+.home-slider {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(210, 214, 216, 0.7) 100%);
+	box-shadow: inset 0px 0px 200px rgba(0, 16, 40, 0.07);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		column-gap: 185px;
+	}
+
+	&__image {
+		transform: translate(15%, 10%);
+	}
+
+	&__description {
+		font-family: "OpenSans_Condensed";
+		line-height: 1.2;
+		font-feature-settings: "pnum" on, "lnum" on;
+		margin-top: -70px;
+	}
+
+	&__title {
+		font-size: 72px;
+		margin-bottom: 40px;
+	}
+
+	&__row {
+		margin-bottom: 35px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 700px;
+		gap: 15px 60px;
+	}
+
+	&__item {
+		display: flex;
+		column-gap: 20px;
+	}
+
+	&__icon {
+	}
+
+	&__point {
+		font-size: 36px;
+	}
+
+	&__button {
+		max-width: 200px;
+	}
+
+	&__controll {
+	}
+
+	&__prev {
+	}
+
+	&__next {
+	}
+
+	&__pagination {
+	}
+}
+
+//====================================================================================================
