@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -25,43 +25,33 @@ import "../../scss/base/swiper.scss";
 
 // Инициализация слайдеров
 function initSliders() {
-	// Перечень слайдеров
-	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
-		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем скласс нужного слайдера
-			// Подключаем модули слайдера
-			// для конкретного случая
-			modules: [Navigation],
-			observer: true,
-			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+	if (document.querySelector('.home-slider__slider')) { // Указываем скласс нужного слайдера
+		new Swiper('.home-slider__slider', { // Указываем скласс нужного слайдера
+			modules: [Navigation, Pagination],
 			speed: 800,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			// loop: true,
 			//preloadImages: false,
-			//lazy: true,
+			lazy: true,
 
-			/*
 			// Эффекты
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+
 
 			// Пагинация
-			/*
 			pagination: {
-				el: '.swiper-pagination',
+				el: ".home-slider__pagination",
 				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + (index < 10 ? '0' + (index + 1) : (index + 1)) + "</span>";
+				},
 			},
-			*/
 
 			// Скроллбар
 			/*
@@ -73,8 +63,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				nextEl: '.home-slider__next',
+				prevEl: '.home-slider__prev',
 			},
 
 			// Брейкпоинты
@@ -101,7 +91,6 @@ function initSliders() {
 			*/
 			// События
 			on: {
-
 			}
 		});
 	}
