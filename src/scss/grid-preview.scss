@@ -1,0 +1,43 @@
+.grid-preview {
+	padding: 100px 0 80px;
+
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 37px;
+	}
+
+	&__body {
+		display: grid;
+		grid-template: repeat(3, 290px) / repeat(4, 1fr);
+		gap: 40px;
+
+		@media (max-width: $pc) {
+			grid-template: repeat(4, 290px) / repeat(3, 1fr);
+		}
+	}
+
+	&__item {
+		&_hor-2 {
+			grid-column: span 2;
+		}
+
+		&_vert-2 {
+			grid-row: span 2;
+
+			&_tracs {
+				position: relative;
+				img {
+					position: absolute;
+					top: 35px;
+					@include adaptiveValue("right", -50, -100, 1920, 768, 1);
+				}
+			}
+		}
+
+		&_hor-3 {
+			grid-column: span 3;
+		}
+	}
+}

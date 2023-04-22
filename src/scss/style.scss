@@ -172,10 +172,12 @@ body {
 @import "actions";
 @import "button";
 @import "home-slider";
+@import "products-card";
 
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
+@import "grid-preview";
 
 // Подключение стилей отдельных страниц
 @import "home";
