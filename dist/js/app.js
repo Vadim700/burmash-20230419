@@ -3570,7 +3570,6 @@
         if (document.querySelector(".home-slider__slider")) new core(".home-slider__slider", {
             modules: [ Navigation, Pagination ],
             speed: 800,
-            lazy: true,
             effect: "fade",
             autoplay: {
                 delay: 3e3,
@@ -3586,6 +3585,11 @@
             navigation: {
                 nextEl: ".home-slider__next",
                 prevEl: ".home-slider__prev"
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                }
             },
             on: {}
         });

@@ -45,6 +45,7 @@
 	&__icon {
 		margin-right: 10px;
 		max-width: 18px;
+
 		@media (max-width: $mobile) {
 			margin-right: 0;
 		}
@@ -178,7 +179,7 @@
 		height: auto;
 		top: 22px;
 		left: 0;
-		padding: 0 0px 10px 30px;
+		padding: 2px 0px 10px 40px;
 		border-radius: 0 0 15px 15px;
 		background-color: var(--dark-grey-bg);
 		z-index: 2;

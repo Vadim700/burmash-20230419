@@ -1,11 +1,11 @@
 <header class="header">
 	<div class="header__container">
 
-		<button type="button" class="header__icon icon-menu"><span></span></button>
+		<button type="button" class="header__icon icon-menu" aria-label="burger"><span></span></button>
 
 		<div class="header__logo logo">
 			<div class="logo__icon">
-				<img src="../img/icons/logo.png" alt="Логотип">
+				<img src="../img/icons/logo.png" alt="Логотип" sizes="70px">
 			</div>
 			<div class="logo__description">Производство бурового инструмента и техники с 1999 г.</div>
 		</div>
@@ -37,8 +37,8 @@
 			<div class="actions__phone">
 				<div class="actions__phone-body">
 					<picture>
-						<source media="(min-width: 768px)" srcset="../img/icons/phone.svg">
-						<img class="actions__icon" src="../img/icons/phone-white-bg.svg" alt="Иконка телефона">
+						<source media="(min-width: 768px)" srcset="../img/icons/phone.svg" class="actions__icon">
+						<img class="actions__icon" src="../img/icons/phone-white-bg.svg" alt="Иконка телефона" sizes="15px">
 					</picture>
 					<a href="tel:88005000814" class="actions__number">8 (800) 500-08-14</a>
 				</div>
@@ -46,13 +46,13 @@
 			</div>
 			<div class="actions__location">
 				<picture>
-					<source media="(min-width: 768px)" srcset="../img/icons/address.svg">
-					<img class="actions__icon" src="../img/icons/address-white-bg.svg" alt="adress">
+					<source media="(min-width: 768px)" srcset="../img/icons/address.svg" class="actions__icon">
+					<img class="actions__icon" src="../img/icons/address-white-bg.svg" alt="adress" sizes="17px">
 				</picture>
 				<a href="#" class="actions__link-title">Екатеринбург</a>
 				<div data-spollers class="actions__spollers">
 					<div class="actions__body">
-						<button type="button" name="arr" data-spoller class="actions__arrow"></button>
+						<button type="button" data-spoller class="actions__arrow" aria-label="arrow"></button>
 						<ul class="actions__list">
 							<li class="actions__item-list"><a href="#" class="actions__link">Москва</a></li>
 							<li class="actions__item-list"><a href="#" class="actions__link">Санкт-Петербург</a></li>
@@ -69,7 +69,7 @@
 					class="button button_action">Перезвоните мне</button>
 			</div>
 			<div class="actions__mail">
-				<img class="actions__icon" src="../img/icons/mail.svg" alt="Иконка почты">
+				<img class="actions__icon" src="../img/icons/mail.svg" alt="Иконка почты" sizes="19px">
 				<a href="mailto:info@burmash1.ru" class="actions__mail-link">info@burmash1.ru</a>
 			</div>
 		</div>

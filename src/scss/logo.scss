@@ -9,6 +9,10 @@
 	}
 
 	&__icon {
+		&img {
+			height: 70px;
+			width: 70px;
+		}
 		@media (max-width: $mobile) {
 			& img {
 				width: 40px;

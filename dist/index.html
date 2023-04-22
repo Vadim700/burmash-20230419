@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="the Burmash company" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230422020430" /> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230422020430">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230422191403" /> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230422191403">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +19,11 @@
 		<header class="header">
 			<div class="header__container">
 
-				<button type="button" class="header__icon icon-menu"><span></span></button>
+				<button type="button" class="header__icon icon-menu" aria-label="burger"><span></span></button>
 
 				<div class="header__logo logo">
 					<div class="logo__icon">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.png" alt="Логотип"></picture>
+						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.png" alt="Логотип" sizes="70px"></picture>
 					</div>
 					<div class="logo__description">Производство бурового инструмента и техники с 1999 г.</div>
 				</div>
@@ -54,8 +54,8 @@
 					<div class="actions__phone">
 						<div class="actions__phone-body">
 							<picture>
-								<source media="(min-width: 768px)" srcset="img/icons/phone.svg">
-								<img class="actions__icon" src="img/icons/phone-white-bg.svg" alt="Иконка телефона">
+								<source media="(min-width: 768px)" srcset="img/icons/phone.svg" class="actions__icon">
+								<img class="actions__icon" src="img/icons/phone-white-bg.svg" alt="Иконка телефона" sizes="15px">
 							</picture>
 							<a href="tel:88005000814" class="actions__number">8 (800) 500-08-14</a>
 						</div>
@@ -63,13 +63,13 @@
 					</div>
 					<div class="actions__location">
 						<picture>
-							<source media="(min-width: 768px)" srcset="img/icons/address.svg">
-							<img class="actions__icon" src="img/icons/address-white-bg.svg" alt="adress">
+							<source media="(min-width: 768px)" srcset="img/icons/address.svg" class="actions__icon">
+							<img class="actions__icon" src="img/icons/address-white-bg.svg" alt="adress" sizes="17px">
 						</picture>
 						<a href="#" class="actions__link-title">Екатеринбург</a>
 						<div data-spollers class="actions__spollers">
 							<div class="actions__body">
-								<button type="button" name="arr" data-spoller class="actions__arrow"></button>
+								<button type="button" data-spoller class="actions__arrow" aria-label="arrow"></button>
 								<ul class="actions__list">
 									<li class="actions__item-list"><a href="#" class="actions__link">Москва</a></li>
 									<li class="actions__item-list"><a href="#" class="actions__link">Санкт-Петербург</a></li>
@@ -85,7 +85,7 @@
 						<button data-da=".menu__body, 510" data-popup="#call-me" type="button" class="button button_action">Перезвоните мне</button>
 					</div>
 					<div class="actions__mail">
-						<img class="actions__icon" src="img/icons/mail.svg" alt="Иконка почты">
+						<img class="actions__icon" src="img/icons/mail.svg" alt="Иконка почты" sizes="19px">
 						<a href="mailto:info@burmash1.ru" class="actions__mail-link">info@burmash1.ru</a>
 					</div>
 				</div>
@@ -97,10 +97,11 @@
 				<div class="home-slider__container">
 					<div class="home-slider__slider swiper">
 						<div class="home-slider__wrapper swiper-wrapper">
+
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt=""></picture>
+										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes="365px 625px"></picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -124,10 +125,11 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt=""></picture>
+										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -151,10 +153,11 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt=""></picture>
+										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -178,10 +181,11 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt=""></picture>
+										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -205,10 +209,11 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt=""></picture>
+										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -232,11 +237,12 @@
 									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 					<div class="home-slider__controll">
-						<button type="button" class="home-slider__prev swiper-button-prev"></button>
-						<button type="button" class="home-slider__next swiper-button-next"></button>
+						<button type="button" class="home-slider__prev swiper-button-prev" aria-label="prev"></button>
+						<button type="button" class="home-slider__next swiper-button-next" aria-label="next"></button>
 						<div class="home-slider__pagination swiper-pagination"></div>
 					</div>
 				</div>
@@ -336,8 +342,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230422020430"></script> -->
-	<script src="js/app.min.js?_v=20230422020430"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230422191403"></script> -->
+	<script src="js/app.min.js?_v=20230422191403"></script>
 </body>
 
 </html>
