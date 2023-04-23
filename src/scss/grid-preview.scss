@@ -1,11 +1,15 @@
 .grid-preview {
 	padding: 100px 0 80px;
 
-	&__container {
+	@media (max-width: $mobile) {
+		padding: 0;
 	}
 
 	&__title {
 		margin-bottom: 37px;
+		@media (max-width: $mobile) {
+			display: none;
+		}
 	}
 
 	&__body {
@@ -16,9 +20,27 @@
 		@media (max-width: $pc) {
 			grid-template: repeat(4, 290px) / repeat(3, 1fr);
 		}
+
+		@media (max-width: $mobile) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 0;
+		}
 	}
 
 	&__item {
+		@media (max-width: $mobile) {
+			border-bottom: 1px solid var(--grey-strokes);
+		}
+
+		&_mobile {
+			display: none;
+			@media (max-width: $mobile) {
+				display: block;
+			}
+		}
+
 		&_hor-2 {
 			grid-column: span 2;
 		}

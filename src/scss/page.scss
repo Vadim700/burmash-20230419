@@ -1,0 +1,10 @@
+.page {
+	&__home-slider {
+	}
+
+	&__grid-preview {
+		@media (max-width: $mobile) {
+			margin-bottom: rem(30);
+		}
+	}
+}
