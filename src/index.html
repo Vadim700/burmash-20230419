@@ -7,8 +7,8 @@
 <body>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
-		<main class="page">
 
+		<main class="page">
 			<section class="page__home-slider home-slider">
 				@@include('html/_home-slider.htm',{})
 			</section>
@@ -17,7 +17,15 @@
 				@@include('html/_grid-preview.htm',{})
 			</section>
 
+			<section class="page__list-info list-info">
+				@@include('html/_list-info.htm',{})
+			</section>
+
+			<section class="page__products products">
+				@@include('html/_products.htm',{})
+			</section>
 		</main>
+
 		@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_popup.htm',{})

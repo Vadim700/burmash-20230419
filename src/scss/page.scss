@@ -1,10 +1,25 @@
 .page {
 	&__home-slider {
+		margin-bottom: 102px;
 	}
 
 	&__grid-preview {
+		margin-bottom: 80px;
+
 		@media (max-width: $mobile) {
 			margin-bottom: rem(30);
 		}
+	}
+
+	&__list-info {
+		margin-bottom: 50px;
+
+		@media (max-width: $mobile) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__products {
+		margin-bottom: rem(100);
 	}
 }

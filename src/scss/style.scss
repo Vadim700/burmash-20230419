@@ -172,12 +172,16 @@ body {
 @import "actions";
 @import "button";
 @import "home-slider";
-@import "products-card";
+@import "preview-card";
+@import "main-list";
+@import "card";
 
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
 @import "grid-preview";
+@import "list-info";
+@import "products";
 
 // Подключение стилей отдельных страниц
 @import "page";

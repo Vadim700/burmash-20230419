@@ -500,6 +500,19 @@
         }
     }
     modules_flsModules.popup = new Popup({});
+    function formQuantity() {
+        document.addEventListener("click", (function(e) {
+            let targetElement = e.target;
+            if (targetElement.closest(".quantity__button")) {
+                let value = parseInt(targetElement.closest(".quantity").querySelector("input").value);
+                if (targetElement.classList.contains("quantity__button_plus")) value++; else {
+                    --value;
+                    if (value < 1) value = 1;
+                }
+                targetElement.closest(".quantity").querySelector("input").value = value;
+            }
+        }));
+    }
     function ssr_window_esm_isObject(obj) {
         return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
     }
@@ -3724,4 +3737,5 @@
     isWebp();
     menuInit();
     spollers();
+    formQuantity();
 })();
