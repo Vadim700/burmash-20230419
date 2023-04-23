@@ -1,0 +1,95 @@
+.card {
+	display: flex;
+	flex-direction: column;
+
+	&__image {
+		background: radial-gradient(69.31% 69.31% at 50% 50%, rgba(0, 13, 46, 0) 57.69%, rgba(0, 10, 37, 0.04) 100%);
+		border-radius: 5px;
+		width: 100%;
+		padding-bottom: 100%;
+		position: relative;
+		margin-bottom: 22px;
+
+		@media (max-width: $mobile) {
+			margin-bottom: 9px;
+		}
+
+		&:hover {
+			img {
+				&:hover {
+					transition: all 0.7s ease 0s;
+					transform: scale(1.05);
+				}
+			}
+
+			& ~ .card__link {
+				color: var(--orange);
+				transition: all 0.7s ease 0s;
+			}
+		}
+	}
+
+	&__image-wrap {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+			transition: all 0.7s ease 0s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	&__link {
+		margin-bottom: 7px;
+		flex: 1 1 auto;
+		transition: all 0.7s ease 0s;
+		&:hover {
+			color: var(--orange);
+		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__price {
+		margin-right: auto;
+
+		@media (max-width: $mobile) {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 16px;
+			/* identical to box height */
+
+			/* txt */
+
+			color: #232727;
+		}
+	}
+
+	&__qantity {
+		margin-right: 22px;
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	&__basket {
+	}
+}

@@ -1,15 +1,22 @@
 //<QUANTITY>
 // Снипет (HTML): qa
 .quantity {
-	width: 88px;
-	height: 40px;
+	max-width: 80px;
+	height: 25px;
 	display: flex;
-	border: 1px solid rgba(166, 166, 166, 0.45);
+	align-items: center;
+	justify-content: space-between;
+
 	// .quantity__button
 	&__button {
-		flex: 0 0 30px;
+		width: 25px;
+		height: 25px;
+		flex-shrink: 0;
 		position: relative;
+		background: #f4f4f4;
 		cursor: pointer;
+		border-radius: 50%;
+
 		&::before,
 		&::after {
 			content: "";
@@ -18,8 +25,8 @@
 			left: 50%;
 			transition: all 0.3s ease 0s;
 			margin: 0px 0px 0px -4.5px;
-			background-color: #a6a6a6;
-			width: 9px;
+			background-color: var(--orange);
+			width: 10px;
 			height: 1px;
 		}
 		@media (any-hover: hover) {
@@ -30,23 +37,30 @@
 				}
 			}
 		}
+
 		// .quantity__button_plus
 		&_plus {
 			&::before {
 				transform: rotate(-90deg);
 			}
 		}
+
 		// .quantity__button_minus
 		&_minus {
 		}
 	}
+
 	// .quantity__input
 	&__input {
 		flex: 1 1 auto;
 		input {
-			height: 100%;
-			color: #a6a6a6;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 700;
 			font-size: 12px;
+			line-height: 1.64;
+			letter-spacing: 0.44px;
+			color: #3a4346;
 			width: 100%;
 			text-align: center;
 		}

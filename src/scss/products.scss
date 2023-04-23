@@ -1,0 +1,25 @@
+.products {
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		@media (max-width: $mobile) {
+			margin-bottom: 17px;
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+		gap: 60px 38px;
+
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 11px 21px;
+		}
+	}
+
+	&__item {
+	}
+}

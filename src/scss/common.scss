@@ -12,10 +12,14 @@
 
 	@media (max-width: $mobile) {
 		font-family: "Open Sans";
+		font-weight: 700;
 	}
 
 	&_white {
 		color: var(--white-text);
+		@media (max-width: $mobile) {
+			color: var(--primary-text);
+		}
 	}
 }
 
@@ -42,6 +46,9 @@
 
 	&_white {
 		color: var(--white-text);
+		@media (max-width: $mobile) {
+			color: var(--primary-text);
+		}
 	}
 
 	&_link {
