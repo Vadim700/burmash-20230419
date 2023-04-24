@@ -26,4 +26,16 @@
 			margin-bottom: rem(50);
 		}
 	}
+
+	&__catalog {
+		margin-bottom: rem(50);
+
+		@media (max-width: $mobile) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__about {
+		margin-bottom: rem(100);
+	}
 }

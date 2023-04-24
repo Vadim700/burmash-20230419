@@ -1,0 +1,62 @@
+.catalog {
+	padding: 80px 0 85px;
+	background: url("../img/png/bg/catalog.png") 0 0 / cover no-repeat;
+	background-position: center;
+
+	@media (max-width: $mobile) {
+		background: none;
+		padding: 0;
+		padding-top: 16px;
+	}
+
+	&__container {
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 16px;
+		@include adaptiv-font(64, 24);
+
+		&_mobile {
+			display: none;
+			@media (max-width: $mobile) {
+				display: inline;
+			}
+		}
+
+		@media (max-width: $mobile) {
+			font-family: "OpenSans_Condensed";
+			font-weight: 400;
+			color: var(--primary-text);
+			text-align: left;
+			margin-bottom: 9px;
+		}
+	}
+
+	&__subtitle {
+		@include adaptiv-font(30, 11);
+		@include adaptiveValue("margin-bottom", 55, 7);
+
+		@media (max-width: $mobile) {
+			font-family: "Open Sans";
+			text-align: left;
+			color: var(--primary-text);
+			font-weight: 700;
+		}
+
+		&_mobile {
+			display: inline;
+			@media (max-width: $mobile) {
+				display: none;
+			}
+		}
+	}
+
+	&__button {
+		margin: 0px auto;
+		width: 300px;
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+		}
+	}
+}

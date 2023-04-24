@@ -3,7 +3,12 @@
 	grid-template-rows: repeat(4, auto);
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-flow: column;
-	gap: 58px 26px;
+	gap: 57px 45px;
+
+	&_about {
+		grid-template-rows: repeat(2, auto);
+		gap: 28px 45px;
+	}
 
 	@media (max-width: $mobile) {
 		display: flex;
@@ -23,8 +28,8 @@
 		&::before {
 			content: "";
 			position: absolute;
-			width: 20px;
-			height: 15px;
+			width: 17px;
+			height: 13px;
 			top: 0;
 			left: 0;
 			border-bottom: 2px solid var(--orange);
@@ -34,6 +39,7 @@
 			@media (max-width: $mobile) {
 				width: 15px;
 				height: 10px;
+				top: -2px;
 			}
 		}
 	}

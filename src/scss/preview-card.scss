@@ -18,14 +18,15 @@
 		box-shadow: none;
 		filter: none;
 	}
-
-	&:hover {
-		img {
-			transform: scale(1.05);
-		}
-		.products-card__title {
-			color: var(--orange);
-			border-left: 4px solid var(--orange);
+	@media (hover: hover) {
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+			.products-card__title {
+				color: var(--orange);
+				border-left: 4px solid var(--orange);
+			}
 		}
 	}
 

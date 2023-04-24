@@ -28,14 +28,23 @@
 			top: 0;
 			left: 0;
 			z-index: 2;
-			transform: translateY(-100%);
+			transform: translateX(-100%);
 			background-color: var(--white-bg);
 			font-size: 18px;
 			font-weight: 700;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				top: 50px;
+				left: 0;
+				background-color: var(--grey-strokes);
+			}
 		}
 
 		&.open {
-			transform: translateY(0);
+			transform: translateX(0);
 		}
 	}
 
@@ -90,9 +99,11 @@
 			}
 		}
 
-		&:hover {
-			&::after {
-				width: 100%;
+		@media (hover: hover) {
+			&:hover {
+				&::after {
+					width: 100%;
+				}
 			}
 		}
 	}

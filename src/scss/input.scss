@@ -2,7 +2,6 @@
 	width: 100%;
 	outline: none;
 	background-color: var(--white-bg);
-
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 1.64;
@@ -23,7 +22,6 @@
 	&__body {
 		display: flex;
 		align-items: center;
-
 		padding: 15px 20px;
 		border: 1px solid var(--grey-strokes);
 		border-radius: 5px;
@@ -36,7 +34,6 @@
 		font-weight: 700;
 		font-size: 12px;
 		white-space: nowrap;
-
 		display: flex;
 		align-items: center;
 		letter-spacing: 0.44px;
@@ -49,5 +46,12 @@
 	&__input {
 		width: 100%;
 		outline: none;
+
+		&::placeholder {
+			font-weight: 300;
+			color: var(--primary-text);
+			opacity: 0.5;
+			font-size: 12px;
+		}
 	}
 }

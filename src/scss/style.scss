@@ -60,7 +60,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1274;
+$maxWidthContainer: 1285;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -182,6 +182,8 @@ body {
 @import "grid-preview";
 @import "list-info";
 @import "products";
+@import "catalog";
+@import "about";
 
 // Подключение стилей отдельных страниц
 @import "page";
