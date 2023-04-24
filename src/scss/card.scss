@@ -14,17 +14,19 @@
 			margin-bottom: 9px;
 		}
 
-		&:hover {
-			img {
-				&:hover {
-					transition: all 0.7s ease 0s;
-					transform: scale(1.05);
+		@media (hover: hover) {
+			&:hover {
+				img {
+					&:hover {
+						transition: all 0.7s ease 0s;
+						transform: scale(1.05);
+					}
 				}
-			}
 
-			& ~ .card__link {
-				color: var(--orange);
-				transition: all 0.7s ease 0s;
+				& ~ .card__link {
+					color: var(--orange);
+					transition: all 0.7s ease 0s;
+				}
 			}
 		}
 	}
@@ -41,8 +43,10 @@
 			width: 100%;
 			object-fit: cover;
 			transition: all 0.7s ease 0s;
-			&:hover {
-				transform: scale(1.1);
+			@media (hover: hover) {
+				&:hover {
+					transform: scale(1.1);
+				}
 			}
 		}
 	}
@@ -51,8 +55,10 @@
 		margin-bottom: 7px;
 		flex: 1 1 auto;
 		transition: all 0.7s ease 0s;
-		&:hover {
-			color: var(--orange);
+		@media (hover: hover) {
+			&:hover {
+				color: var(--orange);
+			}
 		}
 	}
 
@@ -75,11 +81,7 @@
 			font-weight: 700;
 			font-size: 12px;
 			line-height: 16px;
-			/* identical to box height */
-
-			/* txt */
-
-			color: #232727;
+			color: var(--primary-text);
 		}
 	}
 
@@ -88,8 +90,5 @@
 		@media (max-width: $mobile) {
 			display: none;
 		}
-	}
-
-	&__basket {
 	}
 }

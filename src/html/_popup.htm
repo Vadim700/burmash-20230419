@@ -9,25 +9,54 @@
 	</div>
 </div> -->
 
+<!-- popup-callback -->
 <div id="call-me" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close"></button>
 			<form action="#">
 				<div class="popup__title">Обратный звонок</div>
+
 				<div class="input__body">
 					<label class="input__label" for="inp-name">Ваше имя:<span>*</span></label>
 					<input id="inp-name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
 						class="input__input">
 				</div>
+
 				<div class="input__body">
 					<label class="input__label" for="inp-phone">Телефон:<span>*</span></label>
 					<input id="inp-phone" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
 						class="input__input">
 				</div>
+
 				<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
 					я даю свое согласие на <a href="#">обработку персональных данных.</a>
 				</p>
+
+				<button type="submit" class="popup__button button"> Перезвонить</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- popup-catalog -->
+<div id="catatlog" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<form action="#">
+				<div class="popup__title">Прислать фирменный каталог</div>
+
+				<div class="input__body">
+					<label class="input__label" for="inp-mail">E-mail:<span>*</span></label>
+					<input id="inp-mail" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+						placeholder="Введите свою электронную почту" class="input__input">
+				</div>
+
+				<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
+					я даю свое согласие на <a href="#">обработку персональных данных.</a>
+				</p>
+
 				<button type="submit" class="popup__button button"> Перезвонить</button>
 			</form>
 		</div>

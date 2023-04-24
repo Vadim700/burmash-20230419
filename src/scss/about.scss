@@ -1,0 +1,24 @@
+.about {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 17px;
+	}
+
+	&__text {
+		margin-bottom: 25px;
+		max-width: 99%;
+	}
+
+	&__subtitle {
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		margin-bottom: 35px;
+	}
+}
