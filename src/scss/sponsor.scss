@@ -1,0 +1,33 @@
+.sponsor {
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 63px;
+	}
+
+	&__body {
+		@include gridCards(fit, 280px, 1fr);
+		place-items: center start;
+		gap: 73px 55px;
+
+		@media (max-width: $tablet) {
+			@include gridCards(fit, 180px, 1fr, 40px);
+		}
+
+		@media (max-width: $mobile) {
+			@include gridCards(fit, 100px, 1fr, 40px);
+		}
+		@media (max-width: $mobileSmall) {
+			@include gridCards(fit, 60px, 1fr, 40px);
+		}
+	}
+
+	&__item {
+		img {
+			width: 100%;
+			max-width: 280px;
+			height: auto;
+		}
+	}
+}

@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -29,22 +29,12 @@ function initSliders() {
 		new Swiper('.home-slider__slider', { // Указываем скласс нужного слайдера
 			modules: [Navigation, Pagination],
 			speed: 800,
-
-			//touchRatio: 0,
-			//simulateTouch: false,
-			// loop: true,
-			//preloadImages: false,
-			// lazy: true,
-
-			// Эффекты
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
 
-
-			// Пагинация
 			pagination: {
 				el: ".home-slider__pagination",
 				clickable: true,
@@ -53,21 +43,10 @@ function initSliders() {
 				},
 			},
 
-			// Скроллбар
-			/*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
-
-			// Кнопки "влево/вправо"
 			navigation: {
 				nextEl: '.home-slider__next',
 				prevEl: '.home-slider__prev',
 			},
-
-			// Брейкпоинты
 
 			breakpoints: {
 				768: {
@@ -75,12 +54,55 @@ function initSliders() {
 				},
 			},
 
-			// События
+			on: {
+			}
+		});
+	}
+
+	if (document.querySelector('.license__slider')) { // Указываем скласс нужного слайдера
+		new Swiper('.license__slider', { // Указываем скласс нужного слайдера
+			modules: [Navigation],
+			speed: 800,
+			slidesPerGroup: 1,
+			loop: true,
+			autoHeight: true,
+
+			navigation: {
+				nextEl: '.license__next',
+				prevEl: '.license__prev',
+			},
+
+			breakpoints: {
+				1300: {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				992: {
+					spaceBetween: 10,
+					slidesPerView: 2.3,
+				},
+				768: {
+					spaceBetween: 10,
+					slidesPerView: 3,
+				},
+				479: {
+					spaceBetween: 7,
+					slidesPerView: 2.4,
+				},
+				320: {
+					spaceBetween: 5,
+					slidesPerView: 2.1,
+				},
+			},
+
 			on: {
 			}
 		});
 	}
 }
+
+
+
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
 	let sliderScrollItems = document.querySelectorAll('.swiper_scroll');

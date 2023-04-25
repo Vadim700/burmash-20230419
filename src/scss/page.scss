@@ -38,4 +38,20 @@
 	&__about {
 		margin-bottom: rem(100);
 	}
+
+	&__license {
+		margin-bottom: rem(50);
+
+		@media (max-width: $mobile) {
+			margin-bottom: rem(40);
+		}
+	}
+
+	&__sponsor {
+		margin-bottom: rem(100);
+
+		@media (max-width: $mobile) {
+			margin-bottom: rem(50);
+		}
+	}
 }
