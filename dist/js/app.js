@@ -3619,6 +3619,40 @@
             },
             on: {}
         });
+        if (document.querySelector(".license__slider")) new core(".license__slider", {
+            modules: [ Navigation ],
+            speed: 800,
+            slidesPerGroup: 1,
+            loop: true,
+            autoHeight: true,
+            navigation: {
+                nextEl: ".license__next",
+                prevEl: ".license__prev"
+            },
+            breakpoints: {
+                1300: {
+                    spaceBetween: 15,
+                    slidesPerView: 3
+                },
+                992: {
+                    spaceBetween: 10,
+                    slidesPerView: 2.3
+                },
+                768: {
+                    spaceBetween: 10,
+                    slidesPerView: 3
+                },
+                479: {
+                    spaceBetween: 7,
+                    slidesPerView: 2.4
+                },
+                320: {
+                    spaceBetween: 5,
+                    slidesPerView: 2.1
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
