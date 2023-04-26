@@ -63,6 +63,7 @@
 		line-height: 1.2;
 		font-feature-settings: "pnum" on, "lnum" on;
 		white-space: nowrap;
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -75,6 +76,16 @@
 				display: block;
 			}
 		}
+
+		&_consultation {
+			font-size: 36px;
+			@include adaptiveValue("font-size", 36, 22, 1300, 479, 1);
+			padding-left: 14px;
+
+			@media (max-width: em(1250)) {
+				display: block;
+			}
+		}
 	}
 
 	&__free-call {
@@ -82,11 +93,21 @@
 		color: var(--ligth-text);
 		padding-left: 28px;
 		white-space: nowrap;
+
 		@media (max-width: em(1250)) {
 			display: none;
 		}
 
 		&_footer {
+			@media (max-width: em(1250)) {
+				display: none;
+			}
+		}
+
+		&_consultation {
+			padding-left: 42px;
+			font-size: 12px;
+
 			@media (max-width: em(1250)) {
 				display: block;
 			}

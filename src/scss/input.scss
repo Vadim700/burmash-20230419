@@ -43,6 +43,21 @@
 		}
 	}
 
+	&__textarea {
+		width: 100%;
+		outline: none;
+		min-height: 50px;
+		resize: none;
+		margin-bottom: 20px;
+
+		&::placeholder {
+			font-weight: 300;
+			color: var(--primary-text);
+			opacity: 0.5;
+			font-size: 12px;
+		}
+	}
+
 	&__input {
 		width: 100%;
 		outline: none;

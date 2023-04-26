@@ -1,0 +1,157 @@
+.consultation {
+	background: var(--light-gray-bg);
+	padding: 75px 0 65px;
+	position: relative;
+
+	@media (max-width: $pc) {
+		padding: 35px 0 25px;
+	}
+
+	@media (max-width: $mobileSmall) {
+		display: none;
+	}
+
+	&__container {
+	}
+
+	&__title {
+		@include adaptiveValue("margin-bottom", 60, 20, 1920, 768, 1);
+	}
+
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		max-width: 77%;
+		@include adaptiveValue("column-gap", 110, 20, 1920, 992, 1);
+
+		@media (max-width: $pc) {
+			max-width: 100%;
+		}
+
+		@media (max-width: $mobile) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__column {
+		width: 100%;
+		padding: 20px 0 25px;
+		flex: 0 0 50%;
+
+		@media (max-width: $mobile) {
+			padding: 10px 0 10px;
+		}
+
+		.consultation__info_mail {
+			text-decoration: underline;
+		}
+
+		&_left {
+			padding-right: 95px;
+			@include adaptiveValue("padding-right", 95, 20, 1920, 922, 1);
+			border-right: 1px solid var(--grey-strokes);
+		}
+	}
+
+	&__col-title {
+		@include adaptiveValue("margin-bottom", 60, 15, 1920, 768, 1);
+	}
+
+	&__phone {
+		margin-bottom: 40px;
+		@include adaptiveValue("margin-bottom", 40, 20, 1300, 479, 1);
+	}
+
+	&__form {
+		padding-top: 10px;
+	}
+
+	&__info {
+		margin-bottom: 25px;
+		padding-left: 36px;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			width: 19px;
+			height: 16px;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+
+		&_time {
+			&::before {
+				content: url("../img/icons/clock.svg");
+			}
+		}
+
+		&_mail {
+			display: block;
+			&::before {
+				content: url("../img/icons/mail-grey.svg");
+			}
+		}
+
+		&_location {
+			&::before {
+				content: url("../img/icons/address-grey.svg");
+				top: 25%;
+			}
+			max-width: 300px;
+
+			@media (max-width: $tablet) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__name {
+		@include adaptiveValue("padding-right", 341, 320, 1920, 1300, 1);
+		padding-top: 5px;
+		text-align: right;
+		font-weight: 300;
+		font-size: 36px;
+		line-height: 1.2;
+		font-family: "OpenSans_Condensed";
+		position: relative;
+		transition: all 0.3s ease 0s;
+
+		@media (max-width: rem(1300)) {
+			display: none;
+		}
+
+		span {
+			display: block;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 1.64;
+		}
+
+		::after {
+			content: url("../img/icons/arrow.svg");
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			@include adaptiveValue("right", 300, 280, 1920, 1300, 1);
+		}
+	}
+
+	&__manager {
+		position: absolute;
+		bottom: -5px;
+		@include adaptiveValue("right", 154, -120, 1920, 1300, 1);
+
+		@media (max-width: rem(1300)) {
+			display: none;
+		}
+	}
+
+	&__mobile {
+		@media (max-width: $mobileSmall) {
+			display: block;
+		}
+	}
+}
