@@ -1,0 +1,97 @@
+.form-select {
+	&__body {
+		position: relative;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		background: var(--white-bg);
+		padding: 20px 15px;
+		border-radius: 5px;
+		font-weight: 400;
+		font-size: 12px;
+		@include adaptiveValue("font-size", 18, 12, 768, 320, 1);
+		line-height: 1.64%;
+		letter-spacing: 0.44px;
+		outline: none;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__select {
+	}
+
+	&__list-body {
+		&[open] {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 3;
+
+			.form-select__title {
+				transform: translateY(50%) rotate(-135deg);
+				z-index: 4;
+			}
+
+			&::before {
+				content: "";
+			}
+		}
+
+		&::before {
+			display: inline-block;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			bottom: -20px;
+			left: 30px;
+			border: 10px solid transparent;
+			border-top: 10px solid var(--white);
+		}
+	}
+
+	&__title {
+		border-bottom: 1px solid var(--orange);
+		border-right: 1px solid var(--orange);
+		cursor: pointer;
+		list-style: none;
+		transition: all 0.25s ease 0s;
+
+		position: absolute;
+		height: 15px;
+		width: 15px;
+		top: 20px;
+		right: 20px;
+		transform: rotate(45deg);
+		z-index: 3;
+	}
+
+	&__list {
+		border: 1px solid white;
+		background: var(--white-bg);
+		color: var(--primary-text);
+		padding: 15px 10px;
+		margin-top: 70px;
+		border-radius: 5px;
+		box-shadow: 10px 5px 5px var(--grey-bg);
+		position: relative;
+		max-height: 190px;
+		overflow-y: auto;
+	}
+
+	&__list-item {
+		font-size: 12px;
+	}
+
+	&__link {
+		display: block;
+		padding: 10px 20px;
+	}
+
+	&__button {
+		margin-top: 20px;
+	}
+}
