@@ -87,7 +87,8 @@
 
 	&__qantity {
 		margin-right: 22px;
-		@media (max-width: $mobile) {
+
+		@media (max-width: $mobileSmall) {
 			display: none;
 		}
 	}

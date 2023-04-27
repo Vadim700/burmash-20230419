@@ -28,6 +28,7 @@
   --grey-bg: var(--grey-3);
   --white-bg: var(--white);
   --grey-strokes: var(--grey-4);
+  --red-warning: var(--red);
   --grandient-grey: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(210, 214, 216, 0.7) 100%);
   --gradient-orange: linear-gradient(180deg, #eb2613 0%, #fc5b2a 100%);
   --gradient-dark: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
@@ -941,6 +942,9 @@ body::after {
   -webkit-text-fill-color: transparent;
   box-shadow: 0px 0px 15px #e92011;
 }
+.button_consultation {
+  background: var(--red-warning);
+}
 
 .home-slider {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(210, 214, 216, 0.7) 100%);
@@ -1362,7 +1366,7 @@ body::after {
 .card__qantity {
   margin-right: 22px;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 29.99875em) {
   .card__qantity {
     display: none;
   }
@@ -1899,9 +1903,9 @@ body::after {
     padding: 35px 0 25px;
   }
 }
-@media (max-width: 29.99875em) {
+@media (max-width: 47.99875em) {
   .consultation {
-    display: none;
+    padding: 30px 0 45px;
   }
 }
 @supports (margin-bottom: clamp( 1.25rem , -0.4166666667rem  +  3.4722222222vw , 3.75rem )) {
@@ -1914,6 +1918,11 @@ body::after {
     margin-bottom: calc(
 			1.25rem + 2.5 * (100vw - 48rem) / 72
 		);
+  }
+}
+@media (max-width: 29.99875em) {
+  .consultation__title {
+    display: none;
   }
 }
 .consultation__columns {
@@ -1943,6 +1952,11 @@ body::after {
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 29.99875em) {
+  .consultation__columns {
+    display: none;
+  }
+}
 .consultation__column {
   width: 100%;
   padding: 20px 0 25px;
@@ -1970,6 +1984,11 @@ body::after {
     padding-right: calc(
 			1.25rem + 4.6875 * (100vw - 57.625rem) / 62.375
 		);
+  }
+}
+@media (max-width: 47.99875em) {
+  .consultation__column_left {
+    border-right: none;
   }
 }
 @supports (margin-bottom: clamp( 0.9375rem , -0.9375rem  +  3.90625vw , 3.75rem )) {
@@ -2110,10 +2129,28 @@ body::after {
     display: none;
   }
 }
+.consultation__mobile {
+  display: none;
+}
 @media (max-width: 29.99875em) {
   .consultation__mobile {
     display: block;
   }
+}
+.consultation__mobile-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 15px;
+}
+.consultation__button {
+  margin-bottom: 15px;
+}
+.consultation__text {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
 }
 
 .page__home-slider {

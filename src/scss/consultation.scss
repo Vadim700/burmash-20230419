@@ -7,8 +7,8 @@
 		padding: 35px 0 25px;
 	}
 
-	@media (max-width: $mobileSmall) {
-		display: none;
+	@media (max-width: $mobile) {
+		padding: 30px 0 45px;
 	}
 
 	&__container {
@@ -16,6 +16,9 @@
 
 	&__title {
 		@include adaptiveValue("margin-bottom", 60, 20, 1920, 768, 1);
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
 	}
 
 	&__columns {
@@ -30,6 +33,10 @@
 
 		@media (max-width: $mobile) {
 			flex-direction: column-reverse;
+		}
+
+		@media (max-width: $mobileSmall) {
+			display: none;
 		}
 	}
 
@@ -50,6 +57,10 @@
 			padding-right: 95px;
 			@include adaptiveValue("padding-right", 95, 20, 1920, 922, 1);
 			border-right: 1px solid var(--grey-strokes);
+
+			@media (max-width: $mobile) {
+				border-right: none;
+			}
 		}
 	}
 
@@ -94,11 +105,12 @@
 		}
 
 		&_location {
+			max-width: 300px;
+
 			&::before {
 				content: url("../img/icons/address-grey.svg");
 				top: 25%;
 			}
-			max-width: 300px;
 
 			@media (max-width: $tablet) {
 				max-width: 100%;
@@ -150,8 +162,27 @@
 	}
 
 	&__mobile {
+		display: none;
 		@media (max-width: $mobileSmall) {
 			display: block;
 		}
+	}
+
+	&__mobile-title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 19px;
+		margin-bottom: 15px;
+	}
+
+	&__button {
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 11px;
+		line-height: 15px;
+		margin-bottom: 10px;
 	}
 }
