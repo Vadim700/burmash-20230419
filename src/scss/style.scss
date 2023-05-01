@@ -179,7 +179,7 @@ body {
 @import "card";
 @import "form-spollers";
 
-// Подключение стилей отдельных блоков
+// Стили отдельных блоков
 @import "header";
 @import "footer";
 @import "grid-preview";
@@ -191,6 +191,8 @@ body {
 @import "sponsor";
 @import "consultation";
 @import "form-mobile";
+@import "category";
 
-// Подключение стилей отдельных страниц
-@import "page";
+// Стили страниц
+@import "main-page";
+@import "listing";

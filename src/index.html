@@ -6,51 +6,75 @@
 
 <body>
 	<div class="wrapper">
+		<!-- start header -->
 		@@include('html/_header.htm',{})
+		<!-- end header -->
 
 		<main class="page">
+			<!-- start home-slider -->
 			<section class="page__home-slider home-slider">
 				@@include('html/_home-slider.htm',{})
 			</section>
+			<!-- end home-slider -->
 
+			<!-- start grid-preview -->
 			<section class="page__grid-preview grid-preview">
 				@@include('html/_grid-preview.htm',{})
 			</section>
+			<!-- end grid-preview -->
 
+			<!-- start form-mobile -->
 			<section class="page__form-mobile form-mobile">
 				@@include('html/_form-mobile.htm',{})
 			</section>
+			<!-- start form-mobile -->
 
+			<!-- start list-info -->
 			<section class="page__list-info list-info">
 				@@include('html/_list-info.htm',{})
 			</section>
+			<!-- end list-info -->
 
+			<!-- start products -->
 			<section class="page__products products" data-da=".page, 768,2">
 				@@include('html/_products.htm',{})
 			</section>
+			<!-- end products -->
 
+			<!-- start catalog -->
 			<section class="page__catalog catalog" data-da=".page, 768,0">
 				@@include('html/_catalog.htm',{})
 			</section>
+			<!-- end catalog -->
 
+			<!-- start about -->
 			<section class="page__about about">
 				@@include('html/_about.htm',{})
 			</section>
+			<!-- end about -->
 
+			<!-- start license -->
 			<section class="page__license license">
 				@@include('html/_license.htm',{})
 			</section>
+			<!-- end license -->
 
+			<!-- start license -->
 			<section class="page__sponsor sponsor">
 				@@include('html/_sponsor.htm',{})
 			</section>
+			<!-- end license -->
 
+			<!-- start consultation -->
 			<section class="page__consultation consultation">
 				@@include('html/_consultation.htm',{})
 			</section>
+			<!-- end consultation -->
 		</main>
 
+		<!-- start footer -->
 		@@include('html/_footer.htm',{})
+		<!-- end footer -->
 	</div>
 	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})

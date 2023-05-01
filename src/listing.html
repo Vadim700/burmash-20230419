@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Категории"
+})
+
+<body>
+	<div class="wrapper">
+		<!-- start header -->
+		@@include('html/_header.htm',{})
+		<!-- end header -->
+
+		<main class="page">
+			<!-- start pagination -->
+			@@include('html/_pagging.htm',{})
+			<!-- end pagination -->
+
+			<!-- start fillter -->
+			<section class="page__category category">
+				@@include('html/_category.htm',{})
+			</section>
+			<!-- end fillter -->
+
+
+
+		</main>
+
+		<!-- start footer -->
+		@@include('html/_footer.htm',{})
+		<!-- end footer -->
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
