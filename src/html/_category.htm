@@ -2,6 +2,7 @@
 	<h1 class="category__title">Шнековые буры в Екатеринбурге</h1>
 	<div class="category__row">
 		<div class="category__products products">
+
 			<div class="products__body">
 				<div class="products__item card">
 					<a href="#" class="card__image">
@@ -188,14 +189,14 @@
 			</div>
 
 			<div class="products__pages page-navigation">
-				<button class="page-navigation__arrow"></button>
+				<button class="page-navigation__arrow page-navigation__arrow_prev"></button>
 				<nav class="page-navigation__row">
-					<button type="button" class="page-navigation__item">1</button>
-					<button type="button" class="page-navigation__item">2</button>
-					<button type="button" class="page-navigation__item">3</button>
-					<button type="button" class="page-navigation__item">4</button>
+					<a href="#" type="button" class="page-navigation__item">1</a>
+					<a href="#" type="button" class="page-navigation__item page-navigation__item_active">2</a>
+					<a href="#" type="button" class="page-navigation__item">3</a>
+					<a href="#" type="button" class="page-navigation__item">4</a>
 				</nav>
-				<button class="page-navigation__arrow"></button>
+				<button class="page-navigation__arrow page-navigation__arrow_next"></button>
 			</div>
 
 			<div class="products__discription-title title">Продажа шнековых буров<br> по выгодным ценам</div>
@@ -207,9 +208,68 @@
 				также в
 				быту.
 			</p>
-
 		</div>
-		<aside class="category__filter filter"></aside>
+
+		<aside class="category__filter filter">
+			<div class="filter__item">
+				<h3 class="filter__list-title">Тип инструмента</h3>
+				<ul class="filter__list">
+					<li data-spollers class="filter__list-item filter__list-item_spoller">
+						<button type="button" data-spoller class="filter__spoller">Бурильный
+							инструмент</button>
+						<ul class="filter__sublist">
+							<li class="filter__sublist-item">
+								<a href="#" class="filter__sublink">Лопастные буры</a>
+							</li>
+							<li class="filter__sublist-item">
+								<a href="#" class="filter__sublink">Конусные буры (скальные)</a>
+							</li>
+							<li class="filter__sublist-item">
+								<a href="#" class="filter__sublink">Перовые буры</a>
+							</li>
+						</ul>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Ковшовые буры (ковшебуры)</a>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Шнековые буры (шнекобуры)</a>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Удлинители шнека гидровращателя</a>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Колонковый бур</a>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Шнек секционный</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="filter__item">
+				<h3 class="filter__list-title">Назначение</h3>
+				<ul data-spollers class="filter__list">
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Для бурения скважин</a>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Телескопические</a>
+					</li>
+					<li class="filter__list-item">
+						<a href="#" class="filter__link">Абразивные Скальные</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="filter__item">
+				<div data-spollers class="spollers">
+					<button type="button" data-spoller class="filter__list-title">Заголовок спойлера</button>
+					<div class="spollers__body">Контент спойлера</div>
+				</div>
+			</div>
+
+		</aside>
 	</div>
 
 </div>
