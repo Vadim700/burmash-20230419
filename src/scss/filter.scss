@@ -1,0 +1,54 @@
+.filter {
+	border-top: 1px solid var(--grey-strokes);
+
+	&__section {
+		border-bottom: 1px solid var(--grey-strokes);
+		padding: 20px 0;
+	}
+
+	&__title {
+		font-family: "OpenSans_Condensed";
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 1.2;
+		font-feature-settings: "pnum" on, "lnum" on;
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 1.52;
+		letter-spacing: 0.44px;
+		padding-left: 20px;
+	}
+
+	&__item {
+		transition: all 0.3s ease 0s;
+		text-decoration-line: underline;
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		@media (hover: hover) {
+			&:hover {
+				text-decoration: none;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&__link {
+	}
+
+	&__spollers {
+	}
+
+	&__body {
+	}
+
+	&__label {
+	}
+
+	&__input {
+	}
+}

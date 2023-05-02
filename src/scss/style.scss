@@ -42,6 +42,7 @@ $grey-0: #242828;
 	--white-text: var(--white);
 	--ligth-text: var(--grey-1);
 	--link-text: var(--blue);
+	--black-text: var(--extra-black);
 
 	--light-gray-bg: var(--grey-2);
 	--dark-grey-bg: var(--grey-0);
@@ -193,6 +194,7 @@ body {
 @import "consultation";
 @import "form-mobile";
 @import "category";
+@import "filter";
 
 // Стили страниц
 @import "main-page";
