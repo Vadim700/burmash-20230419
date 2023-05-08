@@ -9,6 +9,10 @@
 	letter-spacing: 0.44px;
 	color: var(--primary-text);
 
+	@media (max-width: $mobile) {
+		display: none;
+	}
+
 	// .pagging__arrow
 	&__arrow {
 		margin-right: 20px;

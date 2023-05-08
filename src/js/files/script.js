@@ -10,39 +10,19 @@ burger.addEventListener("click", function (e) {
 });
 
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// // import Swiper and modules styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+const filterBtn = document.querySelector('.category__filter-btn');
+const filterBody = document.querySelector('.filter__body');
+const filterIcon = document.getElementById("filterIcon");
 
-// const swiper = new Swiper('.home-slider__slider', {
-// 	// Optional parameters
-// 	modules: [Navigation, Pagination],
-// 	// loop: true,
+filterBtn.addEventListener("click", () => {
+	filterBody.classList.toggle('open');
+	changeImage();
+});
 
-// 	// If we need pagination
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		clickable: true,
-// 		renderBullet: function (index, className) {
-// 			return '<span class="' + className + '">' + (index + 1) + "</span>";
-// 		},
-// 	},
-
-// 	autoplay: {
-// 		delay: 3000,
-// 		disableOnInteraction: false,
-// 	},
-
-// 	// Navigation arrows
-// 	navigation: {
-// 		nextEl: '.home-slider__next',
-// 		prevEl: '.home-slider__prev',
-// 	},
-
-// 	// And if we need scrollbar
-// 	// scrollbar: {
-// 	// 	el: '.swiper-scrollbar',
-// 	// },
-// });
+function changeImage() {
+	if (filterBody.classList.contains('open')) {
+		filterIcon.src = "../img/icons/close.svg";
+	} else {
+		filterIcon.src = "../img/icons/filltr.svg";
+	}
+}

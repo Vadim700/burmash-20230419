@@ -1,24 +1,101 @@
 .category {
+	@media (max-width: $mobile) {
+		padding-top: 15px;
+	}
+
 	&__container {
 	}
 
+	&__arr-mobile {
+		margin-right: 20px;
+		display: none;
+
+		@media (max-width: $mobile) {
+			display: inline-block;
+		}
+
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background-color: #fff;
+			border-top: 1px solid var(--grey-strokes);
+			border-right: 1px solid var(--grey-strokes);
+			transform: rotate(-135deg) translate(0px, -3px);
+
+			@media (max-width: $mobileSmall) {
+				transform: rotate(-135deg) translate(-12px, -3px);
+			}
+		}
+	}
+
+	&__filter-btn {
+		position: relative;
+		display: none;
+
+		@media (max-width: $mobile) {
+			display: inline-block;
+		}
+
+		span {
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			top: -50%;
+			left: 50%;
+			border-radius: 50%;
+			background-color: var(--grey-strokes);
+
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 164.06%;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			letter-spacing: 0.44px;
+		}
+	}
+
+	&__header {
+		@include adaptiv-value("margin-bottom", 34, 15, 1);
+		display: flex;
+		align-items: center;
+
+		@media (max-width: $mobileSmall) {
+			align-items: flex-start;
+		}
+	}
+
 	&__title {
+		@include adaptiv-font(72, 24);
+		@include adaptiveValue("padding-right", 0, 80, 768, 320, 1);
 		font-family: "OpenSans_Condensed";
 		font-weight: 300;
-		font-size: 72px;
 		line-height: 1.2;
 		font-feature-settings: "pnum" on, "lnum" on;
-		margin-bottom: 34px;
+		margin-right: auto;
 	}
 
 	&__row {
+		position: relative;
 		display: grid;
 		grid-template-columns: 74% auto;
 		column-gap: 44px;
+
+		@media (max-width: $tablet) {
+			grid-template-columns: 60% auto;
+		}
+
+		@media (max-width: $mobile) {
+			display: block;
+		}
 	}
 
 	&__products {
-		// margin-bottom: 100px;
 	}
 
 	&__filter {
