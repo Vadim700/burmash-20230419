@@ -46,6 +46,20 @@
 	}
 }
 
+//Показывать только на мобилках
+[class*="_mobile"] {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+	}
+}
+
+[class*="_pc"] {
+	@media (max-width: $mobile) {
+		display: none !important;
+	}
+}
+
 // Шаблоны (заготовки)
 // @extend %имя шаблона;
 // Сниппет (SCSS): ex

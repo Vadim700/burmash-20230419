@@ -3762,21 +3762,23 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
-    const burger = document.querySelector(".icon-menu");
-    const menu = document.querySelector(".menu__body");
-    burger.addEventListener("click", (function(e) {
-        menu.classList.toggle("open");
+    window.addEventListener("DOMContentLoaded", (() => {
+        const burger = document.querySelector(".icon-menu");
+        const menu = document.querySelector(".menu__body");
+        const filterBtn = document.querySelector(".category__filter-btn");
+        const filterBody = document.querySelector(".filter__body");
+        const filterIcon = document.getElementById("filterIcon");
+        function changeImage() {
+            if (filterBody.classList.contains("open")) filterIcon.src = "../img/icons/close.svg"; else filterIcon.src = "../img/icons/filltr.svg";
+        }
+        burger.addEventListener("click", (function(e) {
+            menu.classList.toggle("open");
+        }));
+        filterBtn?.addEventListener("click", (() => {
+            filterBody.classList.toggle("open");
+            changeImage();
+        }));
     }));
-    const filterBtn = document.querySelector(".category__filter-btn");
-    const filterBody = document.querySelector(".filter__body");
-    const filterIcon = document.getElementById("filterIcon");
-    filterBtn.addEventListener("click", (() => {
-        filterBody.classList.toggle("open");
-        changeImage();
-    }));
-    function changeImage() {
-        if (filterBody.classList.contains("open")) filterIcon.src = "../img/icons/close.svg"; else filterIcon.src = "../img/icons/filltr.svg";
-    }
     window["FLS"] = true;
     isWebp();
     menuInit();

@@ -434,6 +434,21 @@ body::after {
   object-fit: contain;
 }
 
+[class*=_mobile] {
+  display: none;
+}
+@media (max-width: 47.99875em) {
+  [class*=_mobile] {
+    display: block;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  [class*=_pc] {
+    display: none !important;
+  }
+}
+
 .title {
   font-family: "OpenSans_Condensed";
   font-style: normal;
@@ -998,6 +1013,13 @@ body::after {
   font-weight: 700;
   color: var(--white-text);
   white-space: nowrap;
+}
+.button_transparent {
+  border: 1px solid var(--orange);
+  background: var(--gradient-orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (hover: hover) {
   .button:hover {
@@ -1858,6 +1880,9 @@ body::after {
 }
 .products__pages {
   margin: 100px 0 70px;
+}
+.products__show-more {
+  padding: 40px 0 20px;
 }
 .products__discription-title {
   margin-bottom: 10px;
