@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const burger = document.querySelector('.icon-menu');
 	const menu = document.querySelector('.menu__body');
 
-	// if (filterBtn && filterBody && filterIcon) {
+
 	const filterBtn = document.querySelector('.category__filter-btn');
 	const filterBody = document.querySelector('.filter__body');
 	const filterIcon = document.getElementById("filterIcon");
@@ -28,6 +28,4 @@ window.addEventListener('DOMContentLoaded', () => {
 		filterBody.classList.toggle('open');
 		changeImage();
 	});
-	// }
-
 })

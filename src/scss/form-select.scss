@@ -1,6 +1,11 @@
 .form-select {
 	&__body {
 		position: relative;
+		&_desctop {
+			display: inline-block;
+			width: 300px;
+			// max-height: 50px;
+		}
 	}
 
 	&__input {
@@ -17,6 +22,11 @@
 		outline: none;
 		position: relative;
 		z-index: 2;
+
+		&_desctop {
+			padding: 12px 15px;
+			border: 1px solid var(--grey-strokes);
+		}
 	}
 
 	&__select {
@@ -67,6 +77,10 @@
 		right: 20px;
 		transform: rotate(45deg);
 		z-index: 3;
+
+		&_desctop {
+			top: 12px;
+		}
 	}
 
 	&__list {
@@ -76,10 +90,11 @@
 		padding: 15px 10px;
 		margin-top: 70px;
 		border-radius: 5px;
-		box-shadow: 10px 5px 5px var(--grey-bg);
+		// box-shadow: 10px 5px 5px var(--grey-bg);
 		position: relative;
 		max-height: 190px;
 		overflow-y: auto;
+		text-align: left;
 	}
 
 	&__list-item {
@@ -93,5 +108,10 @@
 
 	&__button {
 		margin-top: 20px;
+
+		&_desctop {
+			width: 300px;
+			margin: 0;
+		}
 	}
 }

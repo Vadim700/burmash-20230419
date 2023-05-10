@@ -1,0 +1,25 @@
+.form-pc {
+	background: var(--light-gray-bg);
+	padding: 98px 0 92px;
+
+	&__container {
+		text-align: center;
+	}
+
+	&__title {
+	}
+
+	&__form {
+		max-width: rem(610);
+		display: flex;
+		justify-content: space-between;
+		justify-items: center;
+		align-items: center;
+		margin: 0px auto;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		margin-bottom: 22px;
+	}
+}

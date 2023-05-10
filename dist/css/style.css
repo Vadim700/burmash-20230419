@@ -1477,6 +1477,10 @@ body::after {
 .form-select__body {
   position: relative;
 }
+.form-select__body_desctop {
+  display: inline-block;
+  width: 300px;
+}
 .form-select__input {
   display: block;
   width: 100%;
@@ -1502,6 +1506,10 @@ body::after {
 			0.75rem + 0.375 * (100vw - 20rem) / 28
 		);
   }
+}
+.form-select__input_desctop {
+  padding: 12px 15px;
+  border: 1px solid var(--grey-strokes);
 }
 .form-select__list-body[open] {
   position: absolute;
@@ -1542,6 +1550,9 @@ body::after {
   transform: rotate(45deg);
   z-index: 3;
 }
+.form-select__title_desctop {
+  top: 12px;
+}
 .form-select__list {
   border: 1px solid white;
   background: var(--white-bg);
@@ -1549,10 +1560,10 @@ body::after {
   padding: 15px 10px;
   margin-top: 70px;
   border-radius: 5px;
-  box-shadow: 10px 5px 5px var(--grey-bg);
   position: relative;
   max-height: 190px;
   overflow-y: auto;
+  text-align: left;
 }
 .form-select__list-item {
   font-size: 12px;
@@ -1563,6 +1574,10 @@ body::after {
 }
 .form-select__button {
   margin-top: 20px;
+}
+.form-select__button_desctop {
+  width: 300px;
+  margin: 0;
 }
 
 .page-navigation {
@@ -2649,6 +2664,26 @@ body::after {
     font-weight: 700;
   }
 }
+.form-pc {
+  background: var(--light-gray-bg);
+  padding: 98px 0 92px;
+}
+.form-pc__container {
+  text-align: center;
+}
+.form-pc__form {
+  max-width: 38.125rem;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+.form-pc__text {
+  margin-bottom: 22px;
+}
+
 .page__home-slider {
   margin-bottom: 6.25rem;
 }
@@ -2708,6 +2743,11 @@ body::after {
 }
 .page__category {
   margin-bottom: 43px;
+}
+@media (max-width: 47.99875em) {
+  .page__category {
+    margin-bottom: 20px;
+  }
 }
 .swiper {
   overflow: hidden;
