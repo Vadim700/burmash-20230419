@@ -56,7 +56,7 @@
 			position: absolute;
 			width: 20px;
 			height: 20px;
-			bottom: -20px;
+			bottom: -19px;
 			left: 30px;
 			border: 10px solid transparent;
 			border-top: 10px solid var(--white);
@@ -88,17 +88,55 @@
 		background: var(--white-bg);
 		color: var(--primary-text);
 		padding: 15px 10px;
-		margin-top: 70px;
+		margin-top: 58px;
 		border-radius: 5px;
-		// box-shadow: 10px 5px 5px var(--grey-bg);
 		position: relative;
 		max-height: 190px;
 		overflow-y: auto;
 		text-align: left;
+
+		@media (max-width: $mobile) {
+			@include adaptiveValue("margin-top", 74, 66, 768, 320, 1);
+		}
+
+		&::-webkit-scrollbar {
+			background-color: var(--scrollbar-bg);
+			border-radius: 10px;
+			width: 8px;
+			position: absolute;
+			clip: rect(0, 0, 0, 0);
+		}
+
+		&::-webkit-scrollbar-thumb {
+			height: 96px;
+			background: linear-gradient(180deg, #eb2613 0%, #fc5b2a 100%);
+			border-radius: 4px;
+		}
 	}
 
 	&__list-item {
 		font-size: 12px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			background-color: var(--grey-strokes);
+			transform: scaleX(0);
+			transition: all 0.2s ease 0s;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				&::before {
+					transform: scaleX(1);
+				}
+			}
+		}
 	}
 
 	&__link {

@@ -16,6 +16,7 @@
   --grey-2: #fafbfb;
   --grey-3: #edf0f0;
   --grey-4: #dee1e3;
+  --grey-5: #eaeaea;
   --blue: #1d509a;
   --orange: #f14040;
   --red: #ee5353;
@@ -28,6 +29,7 @@
   --dark-grey-bg: var(--grey-0);
   --grey-bg: var(--grey-3);
   --white-bg: var(--white);
+  --scrollbar-bg: var(--grey-4);
   --grey-strokes: var(--grey-4);
   --red-warning: var(--red);
   --grandient-grey: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(210, 214, 216, 0.7) 100%);
@@ -1531,7 +1533,7 @@ body::after {
   position: absolute;
   width: 20px;
   height: 20px;
-  bottom: -20px;
+  bottom: -19px;
   left: 30px;
   border: 10px solid transparent;
   border-top: 10px solid var(--white);
@@ -1558,15 +1560,58 @@ body::after {
   background: var(--white-bg);
   color: var(--primary-text);
   padding: 15px 10px;
-  margin-top: 70px;
+  margin-top: 58px;
   border-radius: 5px;
   position: relative;
   max-height: 190px;
   overflow-y: auto;
   text-align: left;
 }
+@media (max-width: 47.99875em) {
+  @supports (margin-top: clamp( 4.125rem , 3.7678571429rem  +  1.7857142857vw , 4.625rem )) {
+    .form-select__list {
+      margin-top: clamp( 4.125rem , 3.7678571429rem  +  1.7857142857vw , 4.625rem );
+    }
+  }
+  @supports not (margin-top: clamp( 4.125rem , 3.7678571429rem  +  1.7857142857vw , 4.625rem )) {
+    .form-select__list {
+      margin-top: calc(
+			4.125rem + 0.5 * (100vw - 20rem) / 28
+		);
+    }
+  }
+}
+.form-select__list::-webkit-scrollbar {
+  background-color: var(--scrollbar-bg);
+  border-radius: 10px;
+  width: 8px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.form-select__list::-webkit-scrollbar-thumb {
+  height: 96px;
+  background: linear-gradient(180deg, #eb2613 0%, #fc5b2a 100%);
+  border-radius: 4px;
+}
 .form-select__list-item {
   font-size: 12px;
+  position: relative;
+}
+.form-select__list-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--grey-strokes);
+  transform: scaleX(0);
+  transition: all 0.2s ease 0s;
+}
+@media (hover: hover) {
+  .form-select__list-item:hover::before {
+    transform: scaleX(1);
+  }
 }
 .form-select__link {
   display: block;
