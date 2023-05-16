@@ -3,6 +3,7 @@
 
 	&__body {
 		transition: all 0.3s ease 0s;
+
 		@media (max-width: $mobile) {
 			position: absolute;
 			top: 0;
@@ -38,24 +39,41 @@
 		font-size: 12px;
 		line-height: 1.52;
 		letter-spacing: 0.44px;
-		padding-left: 20px;
 	}
 
 	&__item {
+		padding-left: 20px;
 		transition: all 0.3s ease 0s;
-		text-decoration-line: underline;
+
+		a {
+			text-decoration: underline;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: rem(20);
 		}
-		@media (hover: hover) {
-			&:hover {
-				text-decoration: none;
+
+		&_sublist {
+			background-color: var(--light-gray-bg);
+			padding-bottom: 10px;
+
+			h4 {
+				margin-bottom: 20px;
 				font-weight: 700;
+				text-decoration: none;
 			}
 		}
 	}
 
 	&__link {
+	}
+
+	&__subitem {
+		padding-left: 20px;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__spollers {

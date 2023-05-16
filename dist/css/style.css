@@ -2694,20 +2694,31 @@ body::after {
   font-size: 12px;
   line-height: 1.52;
   letter-spacing: 0.44px;
-  padding-left: 20px;
 }
 .filter__item {
+  padding-left: 20px;
   transition: all 0.3s ease 0s;
-  text-decoration-line: underline;
+}
+.filter__item a {
+  text-decoration: underline;
 }
 .filter__item:not(:last-child) {
   margin-bottom: 1.25rem;
 }
-@media (hover: hover) {
-  .filter__item:hover {
-    text-decoration: none;
-    font-weight: 700;
-  }
+.filter__item_sublist {
+  background-color: var(--light-gray-bg);
+  padding-bottom: 10px;
+}
+.filter__item_sublist h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.filter__subitem {
+  padding-left: 20px;
+}
+.filter__subitem:not(:last-child) {
+  margin-bottom: 20px;
 }
 .form-pc {
   background: var(--light-gray-bg);
