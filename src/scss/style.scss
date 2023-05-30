@@ -184,6 +184,7 @@ body {
 @import "form-select";
 @import "page-navigation";
 @import "checkbox";
+@import "slider-product";
 
 // Стили отдельных блоков
 @import "header";
@@ -200,7 +201,9 @@ body {
 @import "category";
 @import "filter";
 @import "form-pc";
+@import "product-card";
 
 // Стили страниц
 @import "main-page";
 @import "listing";
+@import "tovar";

@@ -1,0 +1,44 @@
+.slider-product {
+	display: flex;
+	align-items: center;
+	column-gap: 173px;
+	max-height: 550px;
+
+	&__column {
+	}
+
+	&__thumbs {
+		max-height: 335px;
+		overflow: hidden;
+	}
+
+	&__contain {
+		width: 100%;
+		height: 100%;
+		max-height: 550px;
+		overflow: hidden;
+	}
+
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+
+	&__slide-thumb {
+		max-height: 100px;
+	}
+
+	&__image {
+		height: 100px;
+	}
+
+	&__images {
+	}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

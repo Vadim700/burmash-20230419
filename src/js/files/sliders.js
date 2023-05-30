@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -97,6 +97,28 @@ function initSliders() {
 
 			on: {
 			}
+		});
+	}
+
+
+	if (document.querySelector('.slider-product')) {
+		const sliderThumbs = new Swiper('.swiper-container', { //слайдер превью 
+			direction: 'vertical', // вертикальная прокрутка
+			slidesPerView: 1, // показывать по 3 превью
+			spaceBetween: 10, // расстояние между слайдами
+			loop: true,
+		});
+
+		// Инициализация слайдера изображений
+		const sliderImages = new Swiper('.swiper-container', {
+			direction: 'vertical', // вертикальная прокрутка
+			slidesPerView: 3, // показывать по 1 изображению
+			spaceBetween: 15, // расстояние между слайдами
+			effect: 'fade',
+			loop: true,
+			thumbs: { // указываем на превью слайдер
+				swiper: sliderThumbs // указываем имя превью слайдера
+			},
 		});
 	}
 }

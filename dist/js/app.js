@@ -3653,6 +3653,24 @@
             },
             on: {}
         });
+        if (document.querySelector(".slider-product")) {
+            const sliderThumbs = new core(".swiper-container", {
+                direction: "vertical",
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true
+            });
+            new core(".swiper-container", {
+                direction: "vertical",
+                slidesPerView: 3,
+                spaceBetween: 15,
+                effect: "fade",
+                loop: true,
+                thumbs: {
+                    swiper: sliderThumbs
+                }
+            });
+        }
     }
     window.addEventListener("load", (function(e) {
         initSliders();
