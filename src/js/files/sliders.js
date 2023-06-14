@@ -100,28 +100,63 @@ function initSliders() {
 		});
 	}
 
-
-	if (document.querySelector('.slider-product')) {
-		const sliderThumbs = new Swiper('.swiper-container', { //слайдер превью 
-			direction: 'vertical', // вертикальная прокрутка
-			slidesPerView: 1, // показывать по 3 превью
-			spaceBetween: 10, // расстояние между слайдами
+	if (document.querySelector('.slider-product__swiper-preview')) {
+		const thumbsSwiper = new Swiper('.slider-product__swiper-preview', {
+			direction: 'vertical',
 			loop: true,
+			slidesPerView: 3,
+			slidesPerGroupSkip: 1,
+			spaceBetween: 10,
 		});
 
-		// Инициализация слайдера изображений
-		const sliderImages = new Swiper('.swiper-container', {
-			direction: 'vertical', // вертикальная прокрутка
-			slidesPerView: 3, // показывать по 1 изображению
-			spaceBetween: 15, // расстояние между слайдами
-			effect: 'fade',
+		const swiper = new Swiper('.slider-product__swiper', {
+			modules: [Navigation, Thumbs],
+			direction: 'vertical',
 			loop: true,
-			thumbs: { // указываем на превью слайдер
-				swiper: sliderThumbs // указываем имя превью слайдера
-			},
+			effect: 'fade',
+			thumbs: {
+				swiper: thumbsSwiper
+			}
 		});
 	}
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

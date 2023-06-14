@@ -1717,24 +1717,28 @@ body::after {
 .slider-product {
   display: flex;
   align-items: center;
-  column-gap: 173px;
-  max-height: 550px;
+  justify-content: space-between;
 }
-.slider-product__thumbs {
-  max-height: 335px;
-  overflow: hidden;
-}
-.slider-product__contain {
+.slider-product__swiper {
   width: 100%;
-  height: 100%;
-  max-height: 550px;
-  overflow: hidden;
+  width: 320px;
+  height: 600px;
+  border: 1px solid #000;
+  margin: 0px auto;
 }
-.slider-product__slide-thumb {
-  max-height: 100px;
+.slider-product__content-slide img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
 }
-.slider-product__image {
-  height: 100px;
+.slider-product__swiper-preview {
+  width: 100px;
+  height: 320px;
+}
+.slider-product__content-slide-preview img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 .header {
   padding: 25px 0;
