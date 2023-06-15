@@ -1,16 +1,61 @@
 .product-card {
 	padding-top: 42px;
+
 	&__container {
 	}
 
 	&__top {
 		// max-height: 550px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__slider {
+		flex: 0 0 60%;
 	}
 
-	&__delivery {
+	&__info {
+		width: 513px;
+		align-self: flex-start;
+	}
+
+	&__title {
+		margin-bottom: 38px;
+	}
+
+	&__table {
+		border-top: 130px solid var(--light-gray-bg);
+		margin-bottom: 50px;
+	}
+
+	&__contacts {
+		display: flex;
+		align-items: center;
+		column-gap: 31px;
+	}
+
+	&__manager {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 1.64;
+		letter-spacing: 0.44px;
+	}
+
+	&__photo {
+	}
+
+	&__name {
+	}
+
+	&__number {
+	}
+
+	&__link {
 	}
 
 	&__icons {
