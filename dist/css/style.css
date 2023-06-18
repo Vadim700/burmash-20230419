@@ -1715,15 +1715,14 @@ body::after {
 }
 
 .slider-product {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  place-items: center;
 }
 .slider-product__swiper {
   width: 100%;
   width: 320px;
   height: 600px;
-  border: 1px solid #000;
   margin: 0px auto;
 }
 .slider-product__content-slide img {
@@ -2819,6 +2818,7 @@ body::after {
   display: flex;
   align-items: center;
   column-gap: 31px;
+  font-size: 16px;
 }
 .product-card__manager {
   display: flex;
@@ -2828,6 +2828,19 @@ body::after {
   font-size: 12px;
   line-height: 1.64;
   letter-spacing: 0.44px;
+}
+.product-card__contact {
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-card__number {
+  display: block;
+  font-size: 36px;
+}
+.product-card__link {
+  display: inline-block;
 }
 .page__home-slider {
   margin-bottom: 6.25rem;

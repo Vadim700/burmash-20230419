@@ -1,13 +1,16 @@
 .slider-product {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	// display: flex;
+	// align-items: center;
+	// justify-content: space-between;
+
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	place-items: center;
 
 	&__swiper {
 		width: 100%;
 		width: 320px;
 		height: 600px;
-		border: 1px solid #000;
 		margin: 0px auto;
 	}
 
@@ -15,7 +18,6 @@
 	}
 
 	&__slide {
-		// border: 1px solid red;
 	}
 
 	&__content-slide {

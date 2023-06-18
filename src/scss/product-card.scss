@@ -33,6 +33,8 @@
 		display: flex;
 		align-items: center;
 		column-gap: 31px;
+
+		font-size: 16px;
 	}
 
 	&__manager {
@@ -46,6 +48,13 @@
 		letter-spacing: 0.44px;
 	}
 
+	&__contact {
+		min-height: 155px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
 	&__photo {
 	}
 
@@ -53,9 +62,12 @@
 	}
 
 	&__number {
+		display: block;
+		font-size: 36px;
 	}
 
 	&__link {
+		display: inline-block;
 	}
 
 	&__icons {
