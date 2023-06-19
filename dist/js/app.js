@@ -3801,6 +3801,7 @@
                 loop: true,
                 slidesPerView: 3,
                 slidesPerGroupSkip: 1,
+                effect: "fade",
                 spaceBetween: 10
             });
             new core(".slider-product__swiper", {

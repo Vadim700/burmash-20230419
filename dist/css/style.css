@@ -1734,6 +1734,9 @@ body::after {
   width: 100px;
   height: 320px;
 }
+.slider-product__content-slide-preview {
+  cursor: pointer;
+}
 .slider-product__content-slide-preview img {
   width: 100%;
   max-width: 100px;
