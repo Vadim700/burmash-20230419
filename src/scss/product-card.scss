@@ -1,40 +1,60 @@
 .product-card {
 	padding-top: 42px;
 
-	&__container {
-	}
-
 	&__top {
-		// max-height: 550px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__slider {
 		flex: 0 0 60%;
+
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
 	}
 
 	&__info {
 		width: 513px;
 		align-self: flex-start;
+
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
 	}
 
 	&__title {
 		margin-bottom: 38px;
+		@include adaptiv-font(72, 24);
+		font-weight: inherit;
 	}
 
 	&__table {
 		border-top: 130px solid var(--light-gray-bg);
 		margin-bottom: 50px;
+
+		@media (max-width: $mobile) {
+			border-top: none;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__contacts {
 		display: flex;
-		align-items: center;
 		column-gap: 31px;
 
-		font-size: 16px;
+		@include adaptiv-font(16, 13);
+
+		@media (max-width: $mobile) {
+			justify-content: space-evenly;
+			column-gap: 12px;
+		}
 	}
 
 	&__manager {
@@ -46,6 +66,8 @@
 		font-size: 12px;
 		line-height: 1.64;
 		letter-spacing: 0.44px;
+
+		flex-shrink: 0;
 	}
 
 	&__contact {
@@ -53,23 +75,83 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding-top: 8px;
+
+		@media (max-width: $mobile) {
+			min-height: auto;
+		}
 	}
 
 	&__photo {
+		margin-bottom: 8px;
+		border-radius: 50%;
+
+		img {
+			width: 100%;
+			max-width: 95px;
+			@include adaptiveValue("max-width", 95, 77);
+			height: auto;
+		}
 	}
 
 	&__name {
+		font-size: 12px;
 	}
 
 	&__number {
-		display: block;
-		font-size: 36px;
+		display: inline-block;
+		@include adaptiv-font(36, 13);
+		font-weight: 300;
+		white-space: nowrap;
+
+		@media (max-width: $mobile) {
+			font-weight: 700;
+			margin-top: 8px;
+		}
+	}
+
+	&__link-info {
+		display: flex;
+		flex-direction: column;
+
+		.product-card__link {
+			text-decoration: underline;
+		}
 	}
 
 	&__link {
-		display: inline-block;
+		text-decoration: underline;
+		margin-bottom: 8px;
 	}
 
 	&__icons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 30px 50px;
+
+		background-color: var(--light-gray-bg);
+		font-weight: 700;
+		@include adaptiv-font(16, 13);
+		line-height: 1.5;
+
+		@media (max-width: $tablet) {
+			line-height: 1.38;
+		}
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap: 20px;
+			padding: 20px;
+		}
+	}
+
+	&__icon-item {
+		display: flex;
+		flex: 1 0 33.333%;
+		align-items: center;
+		justify-content: center;
+		column-gap: 10px;
 	}
 }
