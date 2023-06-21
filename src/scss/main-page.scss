@@ -61,12 +61,4 @@
 
 	&__consultation {
 	}
-
-	&__product-card {
-		margin-bottom: 83px;
-
-		@media (max-width: $mobile) {
-			margin-bottom: 20px;
-		}
-	}
 }

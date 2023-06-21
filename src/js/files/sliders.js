@@ -116,7 +116,7 @@ function initSliders() {
 			// effect: 'fade',
 			thumbs: {
 				swiper: thumbsSwiper
-			}
+			},
 		});
 	}
 }

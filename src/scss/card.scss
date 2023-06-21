@@ -2,6 +2,15 @@
 	display: flex;
 	flex-direction: column;
 
+	&_tovar {
+		.card__price {
+			@include adaptiv-font(30, 12);
+		}
+		.card__link {
+			@include adaptiv-font(16, 13);
+		}
+	}
+
 	&__image {
 		background: radial-gradient(69.31% 69.31% at 50% 50%, rgba(0, 13, 46, 0) 57.69%, rgba(0, 10, 37, 0.04) 100%);
 		border-radius: 5px;
@@ -43,6 +52,7 @@
 			width: 100%;
 			object-fit: cover;
 			transition: all 0.7s ease 0s;
+
 			@media (hover: hover) {
 				&:hover {
 					transform: scale(1.1);
@@ -55,6 +65,7 @@
 		margin-bottom: 7px;
 		flex: 1 1 auto;
 		transition: all 0.7s ease 0s;
+
 		@media (hover: hover) {
 			&:hover {
 				color: var(--orange);
