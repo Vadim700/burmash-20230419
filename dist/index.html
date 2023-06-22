@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="the Burmash company" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230621231703" /> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230621231703">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230622232400" /> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622232400">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,10 @@
 
 				<div class="header__logo logo">
 					<div class="logo__icon">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.png" alt="Логотип" sizes="70px"></picture>
+						<picture>
+							<source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.png" alt="Логотип"
+								sizes="70px">
+						</picture>
 					</div>
 					<div class="logo__description">Производство бурового инструмента и техники с 1999 г.</div>
 				</div>
@@ -33,19 +36,22 @@
 					<div class="info-header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list menu__list_header">
-								<li class="menu__item"><a href="#" class="menu__link">О заводе</a></li>
-								<li class="menu__item"><a href="listing.html" class="menu__link" target="_blank">Продукция</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Прайс-листы</a></li>
-								<li class="menu__item"><a href="/tovar.html" class="menu__link" target="_blank">Производство</a></li>
+								<li class="menu__item"><a href="#about" class="menu__link">О заводе</a></li>
+								<li class="menu__item"><a href="#products" class="menu__link">Продукция</a></li>
+								<li class="menu__item"><a href="/listing.html" class="menu__link" target="_blank">Услуги</a>
+								</li>
+								<li class="menu__item"><a href="#catalog" class="menu__link">Прайс-листы</a></li>
+								<li class="menu__item"><a href="/tovar.html" class="menu__link" target="_blank">Производство</a>
+								</li>
 								<li class="menu__item"><a href="#" class="menu__link">Закупки</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="#consultation" class="menu__link">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="info-header__search">
 						<label class="info-header__label">
-							<input autocomplete="off" type="text" placeholder="Например: бур лопастной" class="info-header__input input input_header">
+							<input autocomplete="off" type="text" placeholder="Например: бур лопастной"
+								class="info-header__input input input_header">
 							<img class="info-header__image" src="img/icons/search.svg" alt="Иконка поиск">
 						</label>
 					</div>
@@ -57,7 +63,8 @@
 							<a href="tel:88005000814">
 								<picture>
 									<source media="(min-width: 768px)" srcset="img/icons/phone.svg" class="actions__icon">
-									<img class="actions__icon" src="img/icons/phone-white-bg.svg" alt="Иконка телефона" sizes="15px">
+									<img class="actions__icon" src="img/icons/phone-white-bg.svg" alt="Иконка телефона"
+										sizes="15px">
 								</picture>
 							</a>
 							<a href="tel:88005000814" class="actions__number">8 (800) 500-08-14</a>
@@ -90,7 +97,8 @@
 						</div>
 					</div>
 					<div class="actions__button" data-da=".actions, 1250">
-						<button data-da=".menu__body, 510" data-popup="#call-me" type="button" class="button button_action">Перезвоните мне</button>
+						<button data-da=".menu__body, 510" data-popup="#call-me" type="button"
+							class="button button_action">Перезвоните мне</button>
 					</div>
 					<div class="actions__mail">
 						<img class="actions__icon" src="img/icons/mail.svg" alt="Иконка почты" sizes="19px">
@@ -104,7 +112,7 @@
 
 		<main class="page">
 			<!-- start home-slider -->
-			<section class="page__home-slider home-slider">
+			<section class="page__home-slider home-slider" id="home-slider">
 				<div class="home-slider__container">
 					<div class="home-slider__slider swiper">
 						<div class="home-slider__wrapper swiper-wrapper">
@@ -112,7 +120,10 @@
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes="365px 625px"></picture>
+										<picture>
+											<source srcset="img/png/home-slider.webp" type="image/webp"><img
+												src="img/png/home-slider.png" alt="Бур" sizes="365px 625px">
+										</picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -131,7 +142,7 @@
 											</div>
 										</div>
 										<div class="home-slider__button">
-											<button type="button" class="button">Подробнее</button>
+											<button type="button" class="button" data-popup="#tovar">Подробнее</button>
 										</div>
 									</div>
 								</div>
@@ -140,7 +151,10 @@
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
+										<picture>
+											<source srcset="img/png/home-slider.webp" type="image/webp"><img
+												src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px">
+										</picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -159,7 +173,7 @@
 											</div>
 										</div>
 										<div class="home-slider__button">
-											<button type="button" class="button">Подробнее</button>
+											<button type="button" class="button" data-popup="#tovar">Подробнее</button>
 										</div>
 									</div>
 								</div>
@@ -168,7 +182,10 @@
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
+										<picture>
+											<source srcset="img/png/home-slider.webp" type="image/webp"><img
+												src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px">
+										</picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -187,7 +204,7 @@
 											</div>
 										</div>
 										<div class="home-slider__button">
-											<button type="button" class="button">Подробнее</button>
+											<button type="button" class="button" data-popup="#tovar">Подробнее</button>
 										</div>
 									</div>
 								</div>
@@ -196,7 +213,10 @@
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
+										<picture>
+											<source srcset="img/png/home-slider.webp" type="image/webp"><img
+												src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px">
+										</picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -215,7 +235,7 @@
 											</div>
 										</div>
 										<div class="home-slider__button">
-											<button type="button" class="button">Подробнее</button>
+											<button type="button" class="button" data-popup="#tovar">Подробнее</button>
 										</div>
 									</div>
 								</div>
@@ -224,7 +244,10 @@
 							<div class="home-slider__slide swiper-slide">
 								<div class="home-slider__slide-content">
 									<div class="home-slider__image">
-										<picture><source srcset="img.webp/home-slider.webp" type="image/webp"><img src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px"></picture>
+										<picture>
+											<source srcset="img/png/home-slider.webp" type="image/webp"><img
+												src="img/png/home-slider.png" alt="Бур" sizes=" 365px 625px">
+										</picture>
 									</div>
 									<div class="home-slider__description">
 										<h1 class="home-slider__title">Шнеки серии ШМБ-4</h1>
@@ -243,7 +266,7 @@
 											</div>
 										</div>
 										<div class="home-slider__button">
-											<button type="button" class="button">Подробнее</button>
+											<button type="button" class="button" data-popup="#tovar">Подробнее</button>
 										</div>
 									</div>
 								</div>
@@ -261,63 +284,97 @@
 			<!-- end home-slider -->
 
 			<!-- start grid-preview -->
-			<section class="page__grid-preview grid-preview">
+			<section class="page__grid-preview grid-preview" id="grid-preview">
 				<div class="grid-preview__container">
 
 					<h2 class="grid-preview__title title">Выпускаемая продукция</h2>
 
 					<div class="grid-preview__body">
-						<a href="#" class="grid-preview__item grid-preview__item_hor-2 products-card">
+						<a href="/listing.html" target="_blank"
+							class="grid-preview__item grid-preview__item_hor-2 products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-1.webp" type="image/webp"><img src="img/png/grid-preview/card-1.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-1.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-1.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Инструмент<br> на малую технику</div>
 						</a>
-						<a href="#" class="grid-preview__item products-card">
+						<a href="/listing.html" target="_blank" class="grid-preview__item products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-2.webp" type="image/webp"><img src="img/png/grid-preview/card-2.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-2.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-2.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Гидро-<br>вращатели</div>
 						</a>
-						<a href="#" class="grid-preview__item grid-preview__item_vert-2 products-card">
+						<a href="/listing.html" target="_blank"
+							class="grid-preview__item grid-preview__item_vert-2 products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-3.webp" type="image/webp"><img src="img/png/grid-preview/card-3.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-3.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-3.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Инструмент<br> для роторных машин</div>
 						</a>
-						<a href="#" class="grid-preview__item grid-preview__item_vert-2 grid-preview__item_vert-2_tracs products-card">
+						<a href="/listing.html" target="_blank"
+							class="grid-preview__item grid-preview__item_vert-2 grid-preview__item_vert-2_tracs products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-4.webp" type="image/webp"><img src="img/png/grid-preview/card-4.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-4.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-4.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Бурильно -крановые<br> машины</div>
 						</a>
-						<a href="#" class="grid-preview__item products-card">
+						<a href="/listing.html" target="_blank" class="grid-preview__item products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-5.webp" type="image/webp"><img src="img/png/grid-preview/card-5.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-5.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-5.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Расходники<br> для инструмента</div>
 						</a>
-						<a href="#" class="grid-preview__item products-card">
+						<a href="/listing.html" target="_blank" class="grid-preview__item products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-6.webp" type="image/webp"><img src="img/png/grid-preview/card-6.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-6.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-6.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Запасные<br> части</div>
 						</a>
-						<a href="#" class="grid-preview__item grid-preview__item_hor-3 products-card">
+						<a href="/listing.html" target="_blank"
+							class="grid-preview__item grid-preview__item_hor-3 products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-7.webp" type="image/webp"><img src="img/png/grid-preview/card-7.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-7.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-7.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
-							<div class="products-card__title subtitle">Строительные бурильные машины<br> (шнековые и сваебойные)</div>
+							<div class="products-card__title subtitle">Строительные бурильные машины<br> (шнековые и
+								сваебойные)</div>
 						</a>
-						<a href="#" class="grid-preview__item grid-preview__item_mobile grid-preview__item_hor-3 products-card">
+						<a href="/listing.html" target="_blank"
+							class="grid-preview__item grid-preview__item_mobile grid-preview__item_hor-3 products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-7.webp" type="image/webp"><img src="img/png/grid-preview/card-7.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-7.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-7.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Строительные шнековые бурильные машины</div>
 						</a>
-						<a href="#" class="grid-preview__item grid-preview__item_mobile grid-preview__item_hor-3 products-card">
+						<a href="/listing.html" target="_blank"
+							class="grid-preview__item grid-preview__item_mobile grid-preview__item_hor-3 products-card">
 							<div class="products-card__image">
-								<picture><source srcset="img.webp/grid-preview/card-7.webp" type="image/webp"><img src="img/png/grid-preview/card-7.png" alt="Инструмент на малую технику"></picture>
+								<picture>
+									<source srcset="img/png/grid-preview/card-7.webp" type="image/webp"><img
+										src="img/png/grid-preview/card-7.png" alt="Инструмент на малую технику">
+								</picture>
 							</div>
 							<div class="products-card__title subtitle">Строительные сваебойные бурильные машины</div>
 						</a>
@@ -328,7 +385,7 @@
 			<!-- end grid-preview -->
 
 			<!-- start form-mobile -->
-			<section class="page__form-mobile form-mobile">
+			<section class="page__form-mobile form-mobile" id="form-mobile">
 				<div class="form-mobile__container">
 					<p class="form-mobile__title title title_white">Не знаете, какое именно оборудование вам необходимо?</p>
 					<p class="form-mobile__text">Получите консультацию наших спейциалистов</p>
@@ -336,34 +393,35 @@
 
 					<form action="#" class="form-mobile__form form-spollers">
 						<div class="form-select__body">
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 (      )" class="form-select__input">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 (      )"
+								class="form-select__input">
 							<div class="form-select__select">
 								<details class="form-select__list-body">
 									<summary class="form-select__title"></summary>
 									<ul class="form-select__list">
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 										<li class="form-select__list-item">
-											<a href="" class="form-select__link">property</a>
+											<a href="#" class="form-select__link">property</a>
 										</li>
 									</ul>
 								</details>
@@ -375,40 +433,49 @@
 					</form>
 
 
-					<p class="form-mobile__text">Это бесплатно и вас ни к чему не обяжет. Гарантируем защиту конфиденциальной информации
+					<p class="form-mobile__text">Это бесплатно и вас ни к чему не обяжет. Гарантируем защиту конфиденциальной
+						информации
 					</p>
 				</div>
 			</section>
 			<!-- start form-mobile -->
 
 			<!-- start list-info -->
-			<section class="page__list-info list-info">
+			<section class="page__list-info list-info" id="list-info">
 				<div class="list-info__container">
-					<h2 class="list-info__title title title_white">Бурмаш — один из самых современных заводов бурильного оборудования
+					<h2 class="list-info__title title title_white">Бурмаш — один из самых современных заводов бурильного
+						оборудования
 					</h2>
 
 					<ul class="list-info__list main-list">
-						<li class="main-list__item primary-text primary-text_white">Ваш заказ будет выполнен в срок - наши мощности
+						<li class="main-list__item primary-text primary-text_white">Ваш заказ будет выполнен в срок - наши
+							мощности
 							позволяют без дополнительной
 							нагрузки производить за месяц продукцию от 60 млн рублей.</li>
-						<li class="main-list__item primary-text primary-text_white">Качество работы обеспечивается опытом наших
+						<li class="main-list__item primary-text primary-text_white">Качество работы обеспечивается опытом
+							наших
 							сотрудников — 90% из них работали на
 							заводе «Стройдормаш», а наши сварщики аттестованы по системе НАКС.</li>
-						<li class="main-list__item primary-text primary-text_white">Вся продукция сертифицирована, каждый продукт имеет
+						<li class="main-list__item primary-text primary-text_white">Вся продукция сертифицирована, каждый
+							продукт имеет
 							свой паспорт и полностью
 							соответствует ГОСТ.</li>
-						<li class="main-list__item primary-text primary-text_white">Все выпускаемые изделия проходят через отдел
+						<li class="main-list__item primary-text primary-text_white">Все выпускаемые изделия проходят через
+							отдел
 							контроля качества, а сварные швы
 							проверяются на специальном оборудовании.</li>
 						<li class="main-list__item primary-text primary-text_white">Решать любые поставленные задачи нам
 							позволяетсобственный отдел разработки.</li>
-						<li class="main-list__item primary-text primary-text_white">Вы можете не опасаться за свой заказ, ведь мы
+						<li class="main-list__item primary-text primary-text_white">Вы можете не опасаться за свой заказ, ведь
+							мы
 							работаем полностью официально и
 							платим все налоги, включая НДС.</li>
-						<li class="main-list__item primary-text primary-text_white">Высокое качество продукции за счет использования
+						<li class="main-list__item primary-text primary-text_white">Высокое качество продукции за счет
+							использования
 							самых крепких и износостойких
 							материалов - за последние 4 года мы получили всего 3 рекламации на 4252 выполненных заказа.</li>
-						<li class="main-list__item primary-text primary-text_white">При изготовлении бурового инструмента мы применяем
+						<li class="main-list__item primary-text primary-text_white">При изготовлении бурового инструмента мы
+							применяем
 							особую технологию, которая
 							позволяет за один проход добиться твердости наплавляемого материала в 65 ед. HRC!</li>
 					</ul>
@@ -416,167 +483,245 @@
 				</div>
 
 				<div class="list-info__bg">
-					<picture><source srcset="img.webp/bg/bg-list-info.webp" type="image/webp"><img src="img/png/bg/bg-list-info.png" alt="Эксковатор"></picture>
+					<picture>
+						<source srcset="img/png/bg/bg-list-info.webp" type="image/webp"><img src="img/png/bg/bg-list-info.png"
+							alt="Эксковатор">
+					</picture>
 				</div>
 			</section>
 			<!-- end list-info -->
 
 			<!-- start products -->
-			<section class="page__products products" data-da=".page, 768,2">
+			<section class="page__products products" data-da=".page, 768,2" id="products">
 				<div class="products__container">
 					<h2 class="products__title title">Популярная продукция</h2>
 					<div class="products__body">
 
 						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-1.webp" type="image/webp"><img src="img/png/products/products-1.png" alt="Карточка товара"></picture></div>
-							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Телескопический шнек ШТ-001.150.8700</a>
-							<div class="card__bottom">
-								<div class="card__price subtitle">9 270 руб.</div>
-								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
-									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
-									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
-								</div>
-								<a href="#" class="card__basket" aria-label="basket">
-									<img src="img/icons/basket.svg" alt="">
-								</a>
-							</div>
-						</div>
-						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-2.webp" type="image/webp"><img src="img/png/products/products-2.png" alt="Карточка товара"></picture></div>
-							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Буровой шнек ШК-001.360.1160</a>
-							<div class="card__bottom">
-								<div class="card__price subtitle">9 270 руб.</div>
-								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
-									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
-									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
-								</div>
-								<a href="#" class="card__basket" aria-label="basket">
-									<img src="img/icons/basket.svg" alt="">
-								</a>
-							</div>
-						</div>
-						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-3.webp" type="image/webp"><img src="img/png/products/products-3.png" alt="Карточка товара"></picture></div>
-							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Забурник шнека CFA/НПШ для скальных пород</a>
-							<div class="card__bottom">
-								<div class="card__price subtitle">9 270 руб.</div>
-								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
-									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
-									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
-								</div>
-								<a href="#" class="card__basket" aria-label="basket">
-									<img src="img/icons/basket.svg" alt="">
-								</a>
-							</div>
-						</div>
-						<div class="products__item card">
-							<a href="#" class="card__image">
+							<a href="/tovar.html" target="_blank" class="card__image">
 								<div class="card__image-wrap">
-									<picture><source srcset="img.webp/products/products-4.webp" type="image/webp"><img src="img/png/products/products-4.png" alt="Карточка товара"></picture>
+									<picture>
+										<source srcset="img/png/products/products-1.webp" type="image/webp"><img
+											src="img/png/products/products-1.png" alt="Карточка товара">
+									</picture>
 								</div>
 							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Забурник скальный</a>
+							<a href="/tovar.html" target="_blank"
+								class="card__link primary-text primary-text_link">Телескопический шнек
+								ШТ-001.150.8700</a>
+							<div class="card__bottom">
+								<div class="card__price subtitle">9 270 руб.</div>
+								<div class="card__qantity quantity">
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
+									</div>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
+								</div>
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
+									<img src="img/icons/basket.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="products__item card">
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-2.webp" type="image/webp"><img
+											src="img/png/products/products-2.png" alt="Карточка товара">
+									</picture>
+								</div>
+							</a>
+							<a href="/tovar.html" target="_blank" class="card__link primary-text primary-text_link">Буровой
+								шнек
+								ШК-001.360.1160</a>
+							<div class="card__bottom">
+								<div class="card__price subtitle">9 270 руб.</div>
+								<div class="card__qantity quantity">
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
+									</div>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
+								</div>
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
+									<img src="img/icons/basket.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="products__item card">
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-3.webp" type="image/webp"><img
+											src="img/png/products/products-3.png" alt="Карточка товара">
+									</picture>
+								</div>
+							</a>
+							<a href="/tovar.html" target="_blank" class="card__link primary-text primary-text_link">Забурник
+								шнека CFA/НПШ
+								для скальных пород</a>
+							<div class="card__bottom">
+								<div class="card__price subtitle">9 270 руб.</div>
+								<div class="card__qantity quantity">
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
+									</div>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
+								</div>
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
+									<img src="img/icons/basket.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="products__item card">
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-4.webp" type="image/webp"><img
+											src="img/png/products/products-4.png" alt="Карточка товара">
+									</picture>
+								</div>
+							</a>
+							<a href="/tovar.html" target="_blank" class="card__link primary-text primary-text_link">Забурник
+								скальный</a>
 							<div class="card__bottom">
 								<div class="card__price subtitle">20 000 руб.</div>
 								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
 									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
 									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
 								</div>
-								<a href="#" class="card__basket" aria-label="basket">
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
 									<img src="img/icons/basket.svg" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-5.webp" type="image/webp"><img src="img/png/products/products-5.png" alt="Карточка товара"></picture></div>
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-5.webp" type="image/webp"><img
+											src="img/png/products/products-5.png" alt="Карточка товара">
+									</picture>
+								</div>
 							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Пробка болт для обсадных труб</a>
+							<a href="/tovar.html" target="_blank" class="card__link primary-text primary-text_link">Пробка болт
+								для
+								обсадных труб</a>
 							<div class="card__bottom">
 								<div class="card__price subtitle">9 270 руб.</div>
 								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
 									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
 									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
 								</div>
-								<a href="#" class="card__basket" aria-label="basket">
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
 									<img src="img/icons/basket.svg" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-6.webp" type="image/webp"><img src="img/png/products/products-6.png" alt="Карточка товара"></picture></div>
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-6.webp" type="image/webp"><img
+											src="img/png/products/products-6.png" alt="Карточка товара">
+									</picture>
+								</div>
 							</a>
-							<a href="#" class="card__link primary-text primary-text_link">БКМ-2032</a>
+							<a href="/tovar.html" target="_blank"
+								class="card__link primary-text primary-text_link">БКМ-2032</a>
 							<div class="card__bottom">
 								<div class="card__price subtitle">14 600 000 руб.</div>
 								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
 									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
 									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
 								</div>
-								<a href="#" class="card__basket" aria-label="basket">
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
 									<img src="img/icons/basket.svg" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-7.webp" type="image/webp"><img src="img/png/products/products-7.png" alt="Карточка товара"></picture></div>
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-7.webp" type="image/webp"><img
+											src="img/png/products/products-7.png" alt="Карточка товара">
+									</picture>
+								</div>
 							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Машина бурильная шнековая МБШ-818</a>
+							<a href="/tovar.html" target="_blank" class="card__link primary-text primary-text_link">Машина
+								бурильная
+								шнековая МБШ-818</a>
 							<div class="card__bottom">
 								<div class="card__price subtitle">14 600 000 руб.</div>
 								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
 									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
 									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
 								</div>
-								<a href="#" class="card__basket" aria-label="basket">
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
 									<img src="img/icons/basket.svg" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="products__item card">
-							<a href="#" class="card__image">
-								<div class="card__image-wrap"><picture><source srcset="img.webp/products/products-8.webp" type="image/webp"><img src="img/png/products/products-8.png" alt="Карточка товара"></picture></div>
+							<a href="/tovar.html" target="_blank" class="card__image">
+								<div class="card__image-wrap">
+									<picture>
+										<source srcset="img/png/products/products-8.webp" type="image/webp"><img
+											src="img/png/products/products-8.png" alt="Карточка товара">
+									</picture>
+								</div>
 							</a>
-							<a href="#" class="card__link primary-text primary-text_link">Гидробур HYDRA T2</a>
+							<a href="/tovar.html" target="_blank" class="card__link primary-text primary-text_link">Гидробур
+								HYDRA T2</a>
 							<div class="card__bottom">
 								<div class="card__price subtitle">9 270 руб.</div>
 								<div class="card__qantity quantity">
-									<button aria-label="plus" type="button" class="quantity__button quantity__button_minus"></button>
+									<button aria-label="plus" type="button"
+										class="quantity__button quantity__button_minus"></button>
 									<div class="quantity__input">
-										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]" value="1">
+										<input aria-labelledby="quantity-input" autocomplete="off" type="text" name="form[]"
+											value="1" aria-label="quntity">
 									</div>
-									<button aria-label="minus" type="button" class="quantity__button quantity__button_plus"></button>
+									<button aria-label="minus" type="button"
+										class="quantity__button quantity__button_plus"></button>
 								</div>
-								<a href="#" class="card__basket" aria-label="basket">
+								<a href="/tovar.html" target="_blank" class="card__basket" aria-label="basket">
 									<img src="img/icons/basket.svg" alt="">
 								</a>
 							</div>
@@ -588,11 +733,13 @@
 			<!-- end products -->
 
 			<!-- start catalog -->
-			<section class="page__catalog catalog" data-da=".page, 768,0">
+			<section class="page__catalog catalog" data-da=".page, 768,0" id="catalog">
 				<div class="catalog__container">
-					<h2 class="catalog__title title title_white">Получите полный каталог <span class="catalog__title_mobile">оборудования
+					<h2 class="catalog__title title title_white">Получите полный каталог <span
+							class="catalog__title_mobile">оборудования
 							для бурения</span></h2>
-					<h3 class="catalog__subtitle subtitle subtitle_white"><span class="catalog__subtitle_mobile">оборудования для
+					<h3 class="catalog__subtitle subtitle subtitle_white"><span class="catalog__subtitle_mobile">оборудования
+							для
 							бурения</span> с техническими характеристиками и
 						ценами</h3>
 					<div class="catalog__button">
@@ -603,7 +750,7 @@
 			<!-- end catalog -->
 
 			<!-- start about -->
-			<section class="page__about about">
+			<section class="page__about about" id="about">
 				<div class="about__container">
 					<h2 class="about__title title">О заводе</h2>
 
@@ -614,30 +761,44 @@
 
 					<ul class="about__list primary-text main-list main-list_about">
 						<li class="main-list__item">производство и ремонт бурильно-крановых машин</li>
-						<li class="main-list__item">производство и реализация запасных частей, гидромоторов, гидроцилиндров, трансмиссий,
+						<li class="main-list__item">производство и реализация запасных частей, гидромоторов, гидроцилиндров,
+							трансмиссий,
 							редукторов и других позиций;</li>
 						<li class="main-list__item">производство и реализация бурильного инструмента</li>
-						<li class="main-list__item">капитальный ремонт бурильно-крановых машин и бурильно-кранового оборудования</li>
+						<li class="main-list__item">капитальный ремонт бурильно-крановых машин и бурильно-кранового
+							оборудования</li>
 					</ul>
 
-					<p class="about__text primary-text">Представленный в этом каталоге ассортимент товаров включает в себя конусные,
-						колонковые, перовые и лопастные буры различной конструкции и диаметра, подходящие для производства работ в грунтах
-						различных типов, а также шнеки и винтовые сваи. По запросу клиента, мы готовы поставить из наличия или изготовить
-						комплектующие, узлы и запасные части к бурильно-крановым машинам российского производства (Геомаш, Ивэнергомаш,
+					<p class="about__text primary-text">Представленный в этом каталоге ассортимент товаров включает в себя
+						конусные,
+						колонковые, перовые и лопастные буры различной конструкции и диаметра, подходящие для производства
+						работ в грунтах
+						различных типов, а также шнеки и винтовые сваи. По запросу клиента, мы готовы поставить из наличия или
+						изготовить
+						комплектующие, узлы и запасные части к бурильно-крановым машинам российского производства (Геомаш,
+						Ивэнергомаш,
 						Стройдормаш). </p>
 
-					<p class="about__text primary-text">Наша продукция применяется на следующей спецтехнике: БМ-811, БКМ-515(А)
-						БКМ-516(А), БКМ-317/318, БМ-205Д(В), БКМ-2012, УБМ-85, МБШ-519/539, МБШ-812/818, МКМ-200. Помимо этого, её
-						используют на кранах-манипуляторах и бурильно-крановых машинах, оборудованных стандартными и телескопическими
-						шнеками марок DongYang, CS Machinery, CSS, Hotomi, Hiab, JunJin, Kanglim, SamYang, Soosan, Taurus, Caterpillar,
+					<p class="about__text primary-text">Наша продукция применяется на следующей спецтехнике: БМ-811,
+						БКМ-515(А)
+						БКМ-516(А), БКМ-317/318, БМ-205Д(В), БКМ-2012, УБМ-85, МБШ-519/539, МБШ-812/818, МКМ-200. Помимо
+						этого, её
+						используют на кранах-манипуляторах и бурильно-крановых машинах, оборудованных стандартными и
+						телескопическими
+						шнеками марок DongYang, CS Machinery, CSS, Hotomi, Hiab, JunJin, Kanglim, SamYang, Soosan, Taurus,
+						Caterpillar,
 						Komatsu, JCB, Hitachi, Volvo, Terex, Hyunday, Shantui и др. </p>
 
-					<p class="about__text primary-text">Также в перечень входят и буровые станки буро-вращательного и канатно-ударного
-						действия, таких фирм как BAUER, CASAGRANDE, DELMAG, JUNTTAN, КАТО, LIEBHERR, SANY, SOILMEC, WIRTH и др.
+					<p class="about__text primary-text">Также в перечень входят и буровые станки буро-вращательного и
+						канатно-ударного
+						действия, таких фирм как BAUER, CASAGRANDE, DELMAG, JUNTTAN, КАТО, LIEBHERR, SANY, SOILMEC, WIRTH и
+						др.
 					</p>
 
-					<p class="about__text primary-text">Рабочий ресурс поставляемого оборудования не уступает продукции известных мировых
-						производителей — это неоднократно подтверждалось в ходе лабораторных испытаний и при реальной эксплуатации
+					<p class="about__text primary-text">Рабочий ресурс поставляемого оборудования не уступает продукции
+						известных мировых
+						производителей — это неоднократно подтверждалось в ходе лабораторных испытаний и при реальной
+						эксплуатации
 						инструмента нашими клиентами.
 					</p>
 				</div>
@@ -645,7 +806,7 @@
 			<!-- end about -->
 
 			<!-- start license -->
-			<section class="page__license license">
+			<section class="page__license license" id="license">
 				<div class="license__container">
 					<div class="license__controll">
 						<h2 class="license__title title title_white">Лицензии<br> и сертификаты</h2>
@@ -660,56 +821,80 @@
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
 							<div class="license__slide swiper-slide">
 								<a href="#" class="license__image">
 									<div class="license__inner">
-										<picture><source srcset="img.webp/license-slider/sertificate.webp" type="image/webp"><img src="img/png/license-slider/sertificate.png" alt="сертификат"></picture>
+										<picture>
+											<source srcset="img/png/license-slider/sertificate.webp" type="image/webp"><img
+												src="img/png/license-slider/sertificate.png" alt="сертификат">
+										</picture>
 									</div>
 								</a>
 							</div>
@@ -720,45 +905,81 @@
 			<!-- end license -->
 
 			<!-- start license -->
-			<section class="page__sponsor sponsor">
+			<section class="page__sponsor sponsor" id="sponsor">
 				<div class="sponsor__container">
 					<h2 class="sponsor__title title">Наши постоянные клиенты:</h2>
 					<div class="sponsor__body">
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/gazprom.webp" type="image/webp"><img src="img/png/sponsor/gazprom.png" alt="газпром"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/gazprom.webp" type="image/webp"><img
+									src="img/png/sponsor/gazprom.png" alt="газпром">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/lukoil.webp" type="image/webp"><img src="img/png/sponsor/lukoil.png" alt="лукойл"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/lukoil.webp" type="image/webp"><img
+									src="img/png/sponsor/lukoil.png" alt="лукойл">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/rosneft.webp" type="image/webp"><img src="img/png/sponsor/rosneft.png" alt="Роснефть"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/rosneft.webp" type="image/webp"><img
+									src="img/png/sponsor/rosneft.png" alt="Роснефть">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/rosseti.webp" type="image/webp"><img src="img/png/sponsor/rosseti.png" alt="россети"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/rosseti.webp" type="image/webp"><img
+									src="img/png/sponsor/rosseti.png" alt="россети">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/rostelekom.webp" type="image/webp"><img src="img/png/sponsor/rostelekom.png" alt="Ростелеком"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/rostelekom.webp" type="image/webp"><img
+									src="img/png/sponsor/rostelekom.png" alt="Ростелеком">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/transneft.webp" type="image/webp"><img src="img/png/sponsor/transneft.png" alt="транснефть"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/transneft.webp" type="image/webp"><img
+									src="img/png/sponsor/transneft.png" alt="транснефть">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/rusgidro.webp" type="image/webp"><img src="img/png/sponsor/rusgidro.png" alt="русгидро"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/rusgidro.webp" type="image/webp"><img
+									src="img/png/sponsor/rusgidro.png" alt="русгидро">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/megafon.webp" type="image/webp"><img src="img/png/sponsor/megafon.png" alt="мегафон"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/megafon.webp" type="image/webp"><img
+									src="img/png/sponsor/megafon.png" alt="мегафон">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/sochi.webp" type="image/webp"><img src="img/png/sponsor/sochi.png" alt="сочи"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/sochi.webp" type="image/webp"><img
+									src="img/png/sponsor/sochi.png" alt="сочи">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/bashneft.webp" type="image/webp"><img src="img/png/sponsor/bashneft.png" alt="башнефть"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/bashneft.webp" type="image/webp"><img
+									src="img/png/sponsor/bashneft.png" alt="башнефть">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/srroidormash.webp" type="image/webp"><img src="img/png/sponsor/srroidormash.png" alt="стройгидромаш"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/srroidormash.webp" type="image/webp"><img
+									src="img/png/sponsor/srroidormash.png" alt="стройгидромаш">
+							</picture>
 						</div>
 						<div class="sponsor__item">
-							<picture><source srcset="img.webp/sponsor/rosavtodor.webp" type="image/webp"><img src="img/png/sponsor/rosavtodor.png" alt="росавтодор"></picture>
+							<picture>
+								<source srcset="img/png/sponsor/rosavtodor.webp" type="image/webp"><img
+									src="img/png/sponsor/rosavtodor.png" alt="росавтодор">
+							</picture>
 						</div>
 					</div>
 				</div>
@@ -766,7 +987,7 @@
 			<!-- end license -->
 
 			<!-- start consultation -->
-			<section class="page__consultation consultation">
+			<section class="page__consultation consultation" id="consultation">
 				<div class="consultation__container">
 					<h2 class="consultation__title title">Экономьте свое время!</h2>
 
@@ -776,15 +997,18 @@
 							<form action="#" class="consultation__form">
 								<div class="consultation__input input">
 									<div class="input__body">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ФИО" class="input__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ФИО"
+											class="input__input">
 									</div>
 
 									<div class="input__body">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон" class="input__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+											placeholder="Телефон" class="input__input">
 									</div>
 
 									<div class="input__body">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="E-mail" class="input__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+											placeholder="E-mail" class="input__input">
 									</div>
 
 									<div class="input__body">
@@ -802,28 +1026,37 @@
 							<div class="consultation__phone actions__phone">
 								<div class="actions__phone-body">
 									<img class="actions__icon" src="img/icons/phone-white-bg.svg" alt="Иконка телефона">
-									<a href="tel:83432882838" class="actions__number actions__number_consultation">+7 (343) 288-28-38</a>
+									<a href="tel:83432882838" class="actions__number actions__number_consultation">+7 (343)
+										288-28-38</a>
 								</div>
 								<div class="actions__free-call actions__free-call_consultation">— звонок бесплатный</div>
 							</div>
-							<div class="consultation__info consultation__info_time primary-text">пн-пт с 9:00 до 18:00 (мск)</div>
-							<a href="#" class="consultation__info consultation__info_mail primary-text primary-text_link">info@burmash1.ru</a>
-							<div class="consultation__info consultation__info_location primary-text">г. Екатеринбург ул. Большакова д.25,
+							<div class="consultation__info consultation__info_time primary-text">пн-пт с 9:00 до 18:00 (мск)
+							</div>
+							<a href="#"
+								class="consultation__info consultation__info_mail primary-text primary-text_link">info@burmash1.ru</a>
+							<div class="consultation__info consultation__info_location primary-text">г. Екатеринбург ул.
+								Большакова д.25,
 								секция 3</div>
 						</div>
 					</div>
 
 					<div class="consultation__name">Первушина Ольга<span>Руководитель отдела продаж</span></div>
 					<div class="consultation__manager">
-						<picture><source srcset="img.webp/bg/manager.webp" type="image/webp"><img src="img/png/bg/manager.png" alt=""></picture>
+						<picture>
+							<source srcset="img/png/bg/manager.webp" type="image/webp"><img src="img/png/bg/manager.png"
+								alt="">
+						</picture>
 					</div>
 
 					<div class="consultation__mobile">
-						<h2 class="consultation__mobile-title title">Энономьте свое время, отправьте заявку на консультацию</h2>
+						<h2 class="consultation__mobile-title title">Энономьте свое время, отправьте заявку на консультацию
+						</h2>
 						<div class="consultation__button">
 							<button type="submit" class="button button_red">Написать письмо онлайн</button>
 						</div>
-						<p class="consultation__text">Или отправьте заявку на электронную почту мы работает пн-пт 09:00 - 18:00 по мск
+						<p class="consultation__text">Или отправьте заявку на электронную почту мы работает пн-пт 09:00 -
+							18:00 по мск
 						</p>
 						<p class="consultation__text">Горячая линия по городу Екатеринбург 8 800 800-80-80 info@burmash1.ru
 							г.Екатеринбург, ул. Большакова д.35, секиця 3</p>
@@ -841,9 +1074,13 @@
 
 			<div class="footer__logo logo">
 				<div class="logo__icon">
-					<picture><source srcset="img/icons/logo-grey.webp" type="image/webp"><img src="img/icons/logo-grey.png" alt="Логотип"></picture>
+					<picture>
+						<source srcset="img/icons/logo-grey.webp" type="image/webp"><img src="img/icons/logo-grey.png"
+							alt="Логотип">
+					</picture>
 				</div>
-				<div class="logo__description logo__description_footer">Производство бурового инструмента и техники с 1999 г.
+				<div class="logo__description logo__description_footer">Производство бурового инструмента и техники с 1999
+					г.
 				</div>
 			</div>
 
@@ -874,7 +1111,8 @@
 
 				<div class="actions__mail">
 					<img class="actions__icon" src="img/icons/mail.svg" alt="Иконка почты">
-					<a href="mailto:info@burmash1.ru" class="actions__mail-link actions__mail-link_footer">info@burmash1.ru</a>
+					<a href="mailto:info@burmash1.ru"
+						class="actions__mail-link actions__mail-link_footer">info@burmash1.ru</a>
 				</div>
 
 				<div class="actions__phone">
@@ -919,19 +1157,24 @@
 
 					<div class="input__body">
 						<label class="input__label" for="inp-name">Ваше имя:<span>*</span></label>
-						<input id="inp-name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="input__input">
+						<input id="inp-name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							class="input__input">
 					</div>
 
 					<div class="input__body">
 						<label class="input__label" for="inp-phone">Телефон:<span>*</span></label>
-						<input id="inp-phone" autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="input__input">
+						<input id="inp-phone" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							class="input__input" placeholder=" +7  (          )">
 					</div>
 
-					<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
+					<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить
+						заявку",
 						я даю свое согласие на <a href="#">обработку персональных данных.</a>
 					</p>
 
 					<button type="submit" class="popup__button button"> Перезвонить</button>
+
+					<p class="popup__text">Поля, отмеченные <span>*</span>, обязательны для заполнения</p>
 				</form>
 			</div>
 		</div>
@@ -947,20 +1190,69 @@
 
 					<div class="input__body">
 						<label class="input__label" for="inp-mail">E-mail:<span>*</span></label>
-						<input id="inp-mail" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите свою электронную почту" class="input__input">
+						<input id="inp-mail" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							placeholder="Введите свою электронную почту" class="input__input" aria-label="input-popup">
 					</div>
 
-					<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
+					<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить
+						заявку",
 						я даю свое согласие на <a href="#">обработку персональных данных.</a>
 					</p>
 
 					<button type="submit" class="popup__button button"> Перезвонить</button>
+
+					<p class="popup__text">Поля, отмеченные <span>*</span>, обязательны для заполнения</p>
 				</form>
 			</div>
 		</div>
 	</div>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230621231703"></script> -->
-	<script src="js/app.min.js?_v=20230621231703"></script>
+
+	<div id="tovar" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<form action="#">
+					<div class="popup__title">Шнеки серии ШМБ-4</div>
+
+					<div class="input__body">
+						<label class="input__label" for="inp-name-tovar">Ваше имя:<span>*</span></label>
+						<input id="inp-name-tovar" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							class="input__input" aria-label="input-popup">
+					</div>
+
+					<div class="input__body">
+						<label class="input__label" for="inp-phone-tovar">Телефон:<span>*</span></label>
+						<input id="inp-phone-tovar" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							class="input__input" placeholder=" +7  (          )" aria-label="input-popup">
+					</div>
+
+					<div class="input__body">
+						<label class="input__label" for="inp-mail-tovar_1">E-mail:<span>*</span></label>
+						<input id="inp-mail-tovar_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							placeholder="Введите свою электронную почту" class="input__input" aria-label="input-popup">
+					</div>
+
+					<div class="input__body input__body_textarea">
+						<label class="input__label" for="inp-mail-tovar">Комментарий</label>
+						<textarea id="" id="inp-mail-tovar" autocomplete="off" type="textarea" name="form[]"
+							data-error="Ошибка" class="input__input input__input_textarea">
+						</textarea>
+					</div>
+
+					<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить
+						заявку",
+						я даю свое согласие на <a href="#">обработку персональных данных.</a>
+					</p>
+
+					<button type="submit" class="popup__button button"> Перезвонить</button>
+
+					<p class="popup__text">Поля, отмеченные <span>*</span>, обязательны для заполнения</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230622232400"></script> -->
+	<script src="js/app.min.js?_v=20230622232400"></script>
 </body>
 
 </html>

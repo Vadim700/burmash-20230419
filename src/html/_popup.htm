@@ -26,7 +26,7 @@
 				<div class="input__body">
 					<label class="input__label" for="inp-phone">Телефон:<span>*</span></label>
 					<input id="inp-phone" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-						class="input__input">
+						class="input__input" placeholder=" +7  (          )">
 				</div>
 
 				<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
@@ -34,6 +34,8 @@
 				</p>
 
 				<button type="submit" class="popup__button button"> Перезвонить</button>
+
+				<p class="popup__text">Поля, отмеченные <span>*</span>, обязательны для заполнения</p>
 			</form>
 		</div>
 	</div>
@@ -50,7 +52,7 @@
 				<div class="input__body">
 					<label class="input__label" for="inp-mail">E-mail:<span>*</span></label>
 					<input id="inp-mail" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-						placeholder="Введите свою электронную почту" class="input__input">
+						placeholder="Введите свою электронную почту" class="input__input" aria-label="input-popup">
 				</div>
 
 				<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
@@ -58,6 +60,52 @@
 				</p>
 
 				<button type="submit" class="popup__button button"> Перезвонить</button>
+
+				<p class="popup__text">Поля, отмеченные <span>*</span>, обязательны для заполнения</p>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="tovar" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<form action="#">
+				<div class="popup__title">Шнеки серии ШМБ-4</div>
+
+				<div class="input__body">
+					<label class="input__label" for="inp-name-tovar">Ваше имя:<span>*</span></label>
+					<input id="inp-name-tovar" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+						class="input__input" aria-label="input-popup">
+				</div>
+
+				<div class="input__body">
+					<label class="input__label" for="inp-phone-tovar">Телефон:<span>*</span></label>
+					<input id="inp-phone-tovar" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+						class="input__input" placeholder=" +7  (          )" aria-label="input-popup">
+				</div>
+
+				<div class="input__body">
+					<label class="input__label" for="inp-mail-tovar_1">E-mail:<span>*</span></label>
+					<input id="inp-mail-tovar_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+						placeholder="Введите свою электронную почту" class="input__input" aria-label="input-popup">
+				</div>
+
+				<div class="input__body input__body_textarea">
+					<label class="input__label" for="inp-mail-tovar">Комментарий</label>
+					<textarea id="" id="inp-mail-tovar" autocomplete="off" type="textarea" name="form[]" data-error="Ошибка"
+						class="input__input input__input_textarea">
+						</textarea>
+				</div>
+
+				<p class="popup__text">Мы гарантируем конфиденциальность ваших данных.<br>Нажимая кнопку "Отправить заявку",
+					я даю свое согласие на <a href="#">обработку персональных данных.</a>
+				</p>
+
+				<button type="submit" class="popup__button button"> Перезвонить</button>
+
+				<p class="popup__text">Поля, отмеченные <span>*</span>, обязательны для заполнения</p>
 			</form>
 		</div>
 	</div>

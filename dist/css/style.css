@@ -8,6 +8,7 @@
   font-style: normal;
 }
 :root {
+  scroll-behavior: smooth;
   --black: #232727;
   --extra-black: #000000;
   --white: #ffffff;
@@ -309,6 +310,14 @@ body::after {
 .popup__text a {
   text-decoration: underline;
 }
+.popup__text span {
+  color: var(--orange);
+  font-weight: 700;
+}
+.popup__button {
+  margin-bottom: 10px;
+}
+
 .spollers {
   display: grid;
   gap: 15px;
@@ -742,6 +751,10 @@ body::after {
   border-radius: 5px;
   background-color: var(--white-bg);
 }
+.input__body_textarea {
+  align-items: start;
+  min-height: 100px;
+}
 .input__label {
   flex: 0 0 15%;
   flex-shrink: 0;
@@ -777,6 +790,11 @@ body::after {
   color: var(--primary-text);
   opacity: 0.5;
   font-size: 12px;
+}
+.input__input_textarea {
+  resize: none;
+  overflow: both;
+  min-height: 80px;
 }
 
 .actions {
@@ -1077,7 +1095,7 @@ body::after {
   }
 }
 .home-slider__image {
-  transform: translate(15%, 15%);
+  transform: translate(15%, 5%);
   position: relative;
   width: 365px;
   height: 625px;
@@ -3196,7 +3214,7 @@ body::after {
 .columns__card {
   display: grid;
   gap: 38px;
-  grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
   margin-bottom: 80px;
 }
 @media (max-width: 75em) {

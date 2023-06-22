@@ -106,8 +106,14 @@ body::after {
 		a {
 			text-decoration: underline;
 		}
+
+		span {
+			color: var(--orange);
+			font-weight: 700;
+		}
 	}
 
 	&__button {
+		margin-bottom: 10px;
 	}
 }

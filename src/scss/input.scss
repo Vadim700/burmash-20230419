@@ -27,6 +27,11 @@
 		border: 1px solid var(--grey-strokes);
 		border-radius: 5px;
 		background-color: var(--white-bg);
+
+		&_textarea {
+			align-items: start;
+			min-height: 100px;
+		}
 	}
 
 	&__label {
@@ -68,6 +73,12 @@
 			color: var(--primary-text);
 			opacity: 0.5;
 			font-size: 12px;
+		}
+
+		&_textarea {
+			resize: none;
+			overflow: both;
+			min-height: 80px;
 		}
 	}
 }
